@@ -1,0 +1,2 @@
+# dots
+omarchy personal dotfiles
