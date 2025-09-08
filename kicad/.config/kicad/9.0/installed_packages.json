@@ -1,0 +1,484 @@
+{
+    "packages": [
+        {
+            "current_version": "2.1.0",
+            "install_timestamp": 1756093780,
+            "package": {
+                "author": {
+                    "contact": {
+                        "email": "info@freerouting.app",
+                        "web": "https://www.freerouting.app/"
+                    },
+                    "name": "Andras Fuchs"
+                },
+                "description": "Freerouting KiCad integration",
+                "description_full": "This is the official KiCad integration for Freerouting, an advanced autorouter.\nIt needs Java JRE 21, download it from https://adoptium.net/temurin/releases .\n",
+                "identifier": "app.freerouting.kicad-plugin",
+                "license": "GPL-3.0",
+                "maintainer": {
+                    "contact": {
+                        "email": "info@freerouting.app"
+                    },
+                    "name": "Andras Fuchs"
+                },
+                "name": "Freerouting",
+                "resources": {
+                    "Github": "https://github.com/freerouting/freerouting/tree/master/integrations/KiCad"
+                },
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "48c7af04fcda711a72f75e5e2f80eb796ed7966a192cdde50d77957fa55e82b0",
+                        "download_size": 61403478,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-2.1.0.zip",
+                        "install_size": 67021614,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2.1.0"
+                    },
+                    {
+                        "download_sha256": "39ce85e2f7221bd7a1d82f54860f00184c4ad55bac955d106231add5e1c2e1b3",
+                        "download_size": 60891211,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-2.0.1.zip",
+                        "install_size": 66445534,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2.0.1"
+                    },
+                    {
+                        "download_sha256": "ad473585cafb13c2fad8dc5e6422eaf455da19ca2e42477c0f21b4b0a63e44cc",
+                        "download_size": 60840861,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-2.0.0.zip",
+                        "install_size": 66388137,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "download_sha256": "9806754c2448c6d4d6ea704f2627b2b31448fa39e8c4aa8c400dc19cecda0222",
+                        "download_size": 4568228,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.9.0.zip",
+                        "install_size": 5086728,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.9.0"
+                    },
+                    {
+                        "download_sha256": "ba428e2abe408ea5d3b97b451514b1e6ba5defe04a917e27b48c40e48d0d52b8",
+                        "download_size": 4309439,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.8.0.zip",
+                        "install_size": 4808684,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.8.0"
+                    },
+                    {
+                        "download_sha256": "62dc982998455e097744510b24331f1b33cee49cb90116b680349f6027618cef",
+                        "download_size": 4304221,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.7.1.zip",
+                        "install_size": 4797518,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.7.1"
+                    },
+                    {
+                        "download_sha256": "d737320dcc835c53975d5d4cbb99afe8e05ed015f41858d350ccffbc456cb424",
+                        "download_size": 4304240,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.7.0.zip",
+                        "install_size": 4797408,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.7.0"
+                    },
+                    {
+                        "download_sha256": "5b7b92448851e982dc31d54c344b6bc74e08e109ef67beae83f321aa50ffab58",
+                        "download_size": 4303331,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.6.zip",
+                        "install_size": 4796646,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.6.6"
+                    },
+                    {
+                        "download_sha256": "8eccd96f48a5f9f77b2e9c33a9fbcc99c6b12c11fdedb4d19356b7a1216497f7",
+                        "download_size": 4301604,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.5.zip",
+                        "install_size": 4793969,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.6.5"
+                    },
+                    {
+                        "download_sha256": "a72f4e5b5cedfee3ecea474315e6fc94e11fcb5480dc77a944dfe67fb2e96367",
+                        "download_size": 4095649,
+                        "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.2.zip",
+                        "install_size": 4526306,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "1.6.2"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "1.0.3",
+            "install_timestamp": 1755828428,
+            "package": {
+                "author": {
+                    "contact": {
+                        "email": "zhanghaf60@gmail.com"
+                    },
+                    "name": "Huaqiu"
+                },
+                "description": "One-click search for electronic components",
+                "description_full": "This advanced search engine empowers engineers, purchasers, and designers to efficiently locate electronic components by integrating ​multi-dimensional search capabilities and real-time supply chain insights. Designed to streamline workflows from prototyping to mass production, it supports searches via ​Manufacturer Part Number (MPN), ​vague descriptions, ​electrical parameters, and even cross-referencing equivalents.",
+                "identifier": "com.github.Huaqiu-Electronics.kicad-hqsearch-plugin",
+                "license": "MIT",
+                "maintainer": {
+                    "contact": {
+                        "email": "zhanghaf60@gmail.com"
+                    },
+                    "name": "Huaqiu"
+                },
+                "name": "Component Search",
+                "resources": {
+                    "Github": "https://github.com/Huaqiu-Electronics/kicad-hqsearch-plugin.git"
+                },
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "1cceddfc7df0280dc7e32c2c0787eccc265c31b2f275ec6984789720354dc4ac",
+                        "download_size": 1464561,
+                        "download_url": "https://raw.githubusercontent.com/Huaqiu-Electronics/kicad-hqdfm-zip/refs/heads/master/KiCAD-HQSearch-1.0.3.zip",
+                        "install_size": 3444202,
+                        "kicad_version": "8.0",
+                        "status": "stable",
+                        "version": "1.0.3"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "4.0.1",
+            "install_timestamp": 1755828424,
+            "package": {
+                "author": {
+                    "contact": {
+                        "github": "https://github.com/MitjaNemec"
+                    },
+                    "name": "Mitja Nemec"
+                },
+                "description": "Arrange footprints on a line, circle or grid.",
+                "description_full": "Arrange sequentially numbered footprints or footprints from multiple hierarchical sheets in linear, circular or matrix arrangement. This plugin works on footprints already present in the layout, so that layout and schematics stay in sync.\nThe placement of footprints from multiple hierarchical sheets works well together with ReplicateLayout plugin",
+                "identifier": "com.github.MitjaNemec.PlaceFootprints",
+                "license": "GPL-2.0",
+                "name": "Place Footprints",
+                "resources": {
+                    "homepage": "https://github.com/MitjaNemec/PlaceFootprints"
+                },
+                "tags": [
+                    "pcbnew",
+                    "footprints",
+                    "arrange"
+                ],
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "fcb2269394ba67da98ecda37b5050da0057065cdd0c86d1238a9fe7d34575b50",
+                        "download_size": 25080,
+                        "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/4.0.1/PlaceFootprints-4.0.1-pcm.zip",
+                        "install_size": 97709,
+                        "kicad_version": "9.0",
+                        "kicad_version_max": "9.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "4.0.1"
+                    },
+                    {
+                        "download_sha256": "fc9a6c98ed8ab0a64607567c4888cafc3cd71db12aad66a52aba35b8ef17ab8c",
+                        "download_size": 24080,
+                        "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/3.0.1/PlaceFootprints-3.0.1-pcm.zip",
+                        "install_size": 94597,
+                        "kicad_version": "7.99",
+                        "kicad_version_max": "8.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "3.0.1"
+                    },
+                    {
+                        "download_sha256": "9b4ab5f3b5578dfbbe0dd40dd08461b06d5f22489c1be2e1fd31447e6863f2da",
+                        "download_size": 23950,
+                        "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/2.1.4/PlaceFootprints-2.1.4-pcm.zip",
+                        "install_size": 93238,
+                        "kicad_version": "7.0",
+                        "kicad_version_max": "7.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "2.1.4"
+                    },
+                    {
+                        "download_sha256": "a6a838d34fbe07fba0909c22d0bfeed27c5430250dc837f1348c0578237031a8",
+                        "download_size": 22668,
+                        "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/1.2.12/PlaceFootprints-1.2.12-pcm.zip",
+                        "install_size": 78947,
+                        "kicad_version": "6.0",
+                        "kicad_version_max": "6.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.2.12"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "4.0.1",
+            "install_timestamp": 1755828443,
+            "package": {
+                "author": {
+                    "contact": {
+                        "email": "dawid_cislo@o2.pl"
+                    },
+                    "name": "Dawid Cisło"
+                },
+                "description": "Symbol and Footprint library focused on improving schematic and PCB readability and aesthetics, mainly intended for hobbyist use",
+                "description_full": "Current version: 4.0\n\nCheck your settings in preferences -> packages and updates.\nIf you have the default library nickname prefix 'PCM_', proceed to install version 4.0.1.\nIf you don't want that prefix, leave that field blank and choose version 4.0 from the list below.\nRefer to documentation via the links below if you have any trouble\n\nAlternate KiCad Library contains over 36700 symbols and 10400 footprints.\n Version 4.0 adds LED, Voltage regulator and crystal symbol libraries, LED footprint libraries and various improvements and bugfixes to existing symbols and footprints.\n\n",
+                "identifier": "com.github.dawidcislo.alternate-kicad-library",
+                "license": "CC-BY-SA",
+                "name": "Alternate Kicad Library",
+                "resources": {
+                    "Github": "https://github.com/DawidCislo/Alternate-KiCad-Library",
+                    "Website": "https://www.alternatekicadlibrary.com/"
+                },
+                "tags": [
+                    "footprints",
+                    "symbols"
+                ],
+                "type": "library",
+                "versions": [
+                    {
+                        "download_sha256": "e7237b61a896384f8e54f908d598f3e3dfec83c1cbeb2a8d729e771b3512fde9",
+                        "download_size": 29004220,
+                        "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v4.0n/com_github_alternate_kicad_library.zip",
+                        "install_size": 140884345,
+                        "kicad_version": "8.0",
+                        "status": "stable",
+                        "version": "4.0.1"
+                    },
+                    {
+                        "download_sha256": "3b9b93dad1aca4c1df6c4042aa91fb424e96504a191870dc7546d881b1a742eb",
+                        "download_size": 29002713,
+                        "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v4.0/com_github_alternate_kicad_library.zip",
+                        "install_size": 140740689,
+                        "kicad_version": "8.0",
+                        "status": "stable",
+                        "version": "4.0"
+                    },
+                    {
+                        "download_sha256": "55da0f126d556400a0511b75fc1543f91e5a4de1645cafbf057c307cb51a9e46",
+                        "download_size": 24209427,
+                        "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v3.0/com_github_alternate_kicad_library.zip",
+                        "install_size": 107680556,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "3.0"
+                    },
+                    {
+                        "download_sha256": "dc07a18ece7a8df203229999b13efe2f0f8e15abf1b07ea507deefe760d5de8b",
+                        "download_size": 15031216,
+                        "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v2.1/com_github_alternate_kicad_library.zip",
+                        "install_size": 67073607,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2.1"
+                    },
+                    {
+                        "download_sha256": "9263e7d394912f06baa1d33180e59bf10a75086ad683abf31d65581c8f2f16e2",
+                        "download_size": 10872186,
+                        "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/raw/main/PCM_Releases/2.0/com_github_alternate_kicad_library.zip",
+                        "install_size": 59137804,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2.0"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "1.0.7",
+            "install_timestamp": 1755828422,
+            "package": {
+                "author": {
+                    "contact": {
+                        "email": "easyw@katamail.com"
+                    },
+                    "name": "easyw"
+                },
+                "description": "A suite of kicad pcbnew action plugin tools",
+                "description_full": "Annular Ring Checker, Snap Selected Footprint(s) to Grid, Fabrication Footprint Position, Move Selected Drawings to chosen Layer, Checking 3D missing models",
+                "identifier": "com.github.easyw.kicad-action-tools",
+                "license": "GPL-2.0",
+                "name": "pcb-action-tools",
+                "resources": {
+                    "Github": "https://github.com/easyw/kicad-action-tools",
+                    "Readme": "https://github.com/easyw/kicad-action-tools/blob/master/README.md"
+                },
+                "tags": [
+                    "annular",
+                    "pcbnew",
+                    "grid",
+                    "mcad"
+                ],
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "03410391e96befad37bc1e4f6f17ae7e8ba29bed5d46411d867a7bad1bab4724",
+                        "download_size": 1060820,
+                        "download_url": "https://github.com/easyw/kicad-action-tools/releases/download/v1.0.7/pcb-action-tools_v1.0.7_pcm.zip",
+                        "install_size": 1517628,
+                        "kicad_version": "8.0",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.0.7"
+                    },
+                    {
+                        "download_sha256": "28458f5d75a84662f880b772931082ceb2f96b8865f49f967f88301cf2242382",
+                        "download_size": 1035738,
+                        "download_url": "https://github.com/easyw/kicad-action-tools/releases/download/v1.0.6/pcb-action-tools_v1.0.6_pcm.zip",
+                        "install_size": 1237276,
+                        "kicad_version": "7.0",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.0.6"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "1.2",
+            "install_timestamp": 1755828443,
+            "package": {
+                "author": {
+                    "contact": {
+                        "web": "https://github.com/pointhi/kicad-color-schemes/"
+                    },
+                    "name": "Thomas Pointhuber"
+                },
+                "description": "Based on Solarized colorscheme from Ethan Schoonover",
+                "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
+                "identifier": "com.github.pointhi.kicad-color-schemes.solarized-dark",
+                "license": "CC0-1.0",
+                "maintainer": {
+                    "contact": {
+                        "web": "https://github.com/pointhi/kicad-color-schemes/"
+                    },
+                    "name": "Thomas Pointhuber"
+                },
+                "name": "Solarized Dark Theme",
+                "resources": {
+                    "Github": "https://github.com/pointhi/kicad-color-schemes"
+                },
+                "type": "colortheme",
+                "versions": [
+                    {
+                        "download_sha256": "7870a3560e9ba112b3bad342d457730bc9c65e787af87d0c55f6fad544a0532c",
+                        "download_size": 4395,
+                        "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.solarized-dark_v1.2_pcm.zip",
+                        "install_size": 5691,
+                        "kicad_version": "5.99",
+                        "status": "stable",
+                        "version": "1.2"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "1.2",
+            "install_timestamp": 1755828425,
+            "package": {
+                "author": {
+                    "contact": {
+                        "email": "mail@qu1ck.org"
+                    },
+                    "name": "qu1ck"
+                },
+                "description": "Batch resize, scale, mirror graphics, tracks, zones, footprints and other items in the PCB editor.",
+                "description_full": "Batch resize, scale, mirror graphics, tracks, zones, footprints and other items in the PCB editor.\nInspired by free transform tool in graphics editors.\nImportant notes:\n• Mirror does not change layers, it transforms in place\n• When a singular footprint is selected it's items are scaled so the footprint itself will become larger/smaller\n• When more than one item is selected footprints are not changed or rescaled, only repositioned/rotated\n• Pads are not rescaled, only repositioned/rotated\n• Rotation center is geometrical center of combined bounding box of all selected items",
+                "identifier": "org.openscopeproject.TransformIt",
+                "license": "MIT",
+                "name": "Transform It",
+                "resources": {
+                    "Forum": "https://forum.kicad.info/t/transformit-plugin-batch-scale-mirror-rotate-all-the-things/40336",
+                    "Github": "https://github.com/openscopeproject/TransformIt"
+                },
+                "tags": [
+                    "scale",
+                    "rotate",
+                    "mirror",
+                    "graphics"
+                ],
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "7d93db4f0444ada004861ce19ce5c6c99f00c5b8e4cd3c32e02e45a7faa3f189",
+                        "download_size": 10063,
+                        "download_url": "https://github.com/openscopeproject/TransformIt/releases/download/v1.2/TransformIt_v1.2_pcm.zip",
+                        "install_size": 24964,
+                        "kicad_version": "7.0",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.2"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        }
+    ]
+}
