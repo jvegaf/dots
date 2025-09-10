@@ -1,0 +1,128 @@
+close_when_open = true
+hotreload_theme = true
+force_keyboard_focus = true
+timeout = 60
+
+[keys.ai]
+run_last_response = ["ctrl e"]
+
+[list]
+max_entries = 200
+cycle = true
+
+[search]
+placeholder = " Search..."
+
+[builtins.hyprland_keybinds]
+path = "~/.config/hypr/hyprland.conf"
+hidden = true
+
+[builtins.applications]
+launch_prefix = "uwsm app -- "
+placeholder = " Search..."
+prioritize_new = false
+context_aware = false
+show_sub_when_single = false
+history = false
+icon = ""
+hidden = true
+
+[builtins.applications.actions]
+enabled = false
+hide_category = true
+
+[builtins.bookmarks]
+hidden = true
+
+[[builtins.bookmarks.entries]]
+label = "Github Copilot"
+url = "https://github.com/copilot"
+keywords = ["copilot", "github"]
+
+
+[builtins.calc]
+name = "Calculator"
+icon = ""
+min_chars = 3
+prefix = "="
+
+[builtins.windows]
+switcher_only = true
+hidden = true
+
+[builtins.clipboard]
+hidden = true
+
+[builtins.commands]
+hidden = true
+
+[builtins.custom_commands]
+hidden = true
+
+[builtins.emojis]
+name = "Emojis"
+icon = ""
+prefix = ":"
+
+[builtins.symbols]
+after_copy = ""
+hidden = true
+
+[builtins.finder]
+use_fd = true
+cmd_alt = "xdg-open $(dirname ~/%RESULT%)"
+icon = "file"
+name = "Finder"
+preview_images = true
+hidden = false
+prefix = "."
+
+[builtins.runner]
+shell_config = ""
+switcher_only = true
+hidden = true
+
+[builtins.ssh]
+hidden = true
+
+[builtins.websearch]
+keep_selection = true
+weight = 5
+icon = "applications-internet"
+name = "websearch"
+placeholder = "Websearch"
+
+[[builtins.websearch.entries]]
+name = "Google"
+url = "https://www.google.com/search?q=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "Github"
+url = "https://github.com/search?q=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "Grabcad"
+url = "https://grabcad.com/library?page=1&amp;time=all_time&amp;sort=recent&amp;query=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "AlternativeTo"
+url = "https://alternativeto.net/browse/search?q=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "Yeggi"
+url = "https://www.yeggi.com/q/%TERM%/"
+
+[[builtins.websearch.entries]]
+name = "Aliexpress"
+url = "http://www.aliexpress.com/wholesale?SearchText=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "Wallapop"
+url = "https://es.wallapop.com/app/search?filters_source=suggester&amp;keywords=%TERM%"
+
+[[builtins.websearch.entries]]
+name = "Youtube"
+url = "https://www.youtube.com/results?search_query=%TERM%"
+
+[builtins.translation]
+hidden = true

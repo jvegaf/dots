@@ -1,0 +1,7 @@
+#!/bin/zsh
+keyb(){
+xset r rate 180 50
+notify-send "keyrate set to 180::50"
+}
+
+keyb

@@ -27,4 +27,4 @@ vim/.vim/pack/vendor/
 vim/.vim/plugged/
 vim/.vim/swaps/
 vim/.vim/undo/
-zsh/.zsh/zsh_modules/
+shell/.zsh/zsh_modules/

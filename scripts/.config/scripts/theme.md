@@ -1,0 +1,9 @@
+Orange
+Teal
+Catppuccin
+Amethyst
+Dark_Cyan
+Dark
+Red
+Purple
+Yellow

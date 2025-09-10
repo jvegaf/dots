@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+
+export DOTFILES_PATH="$HOME/.dotfiles"
+
+export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
+
+echo "Installing dotly 🌚"
+"$DOTLY_PATH/bin/dot" self install
+
+
+echo "Symlinks apply"
+"$DOTLY_PATH/bin/dot" symlinks apply
+
+
+echo "Installing Linux Packages"
+"$DOTLY_PATH/bin/dot" self install_custom
+

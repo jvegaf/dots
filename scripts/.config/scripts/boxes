@@ -1,0 +1,20 @@
+#!/bin/env bash
+
+while getopts "n:" opt; do
+  case $opt in
+    n)
+      box=$OPTARG
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+
+if [ -z "$box" ]; then
+  box=$(echo -en "python:3.11\narchlinux\nalpine\ndebian\nubuntu:20.04\nfedora" | fzf -i +m --height 10% --reverse )
+fi
+
+echo "$box"
+docker run -w /workdir -p 8000:8000 -it --rm -v "$(pwd)":/workdir "$box" bash
