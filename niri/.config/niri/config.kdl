@@ -65,7 +65,7 @@ input {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-/-output "eDP-1" {
+output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
 
@@ -75,10 +75,10 @@ input {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080@120.030"
+    mode "1920x1080@60.027"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 2
+    scale 1
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -93,20 +93,20 @@ input {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 // Setup para mis pantallas actuales
-output "DP-2" {
-    mode "1920x1200@59.950"
-    position x=0 y=0
-    scale 1
-}
-output "DP-1" {
-    mode "1920x1080@60.000"
-    position x=1920 y=0
-    scale 1
-}
+// output "DP-2" {
+//     mode "1920x1200@59.950"
+//     position x=0 y=0
+//     scale 1
+// }
+// output "DP-1" {
+//     mode "1920x1080@60.000"
+//     position x=1920 y=0
+//     scale 1
+// }
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -140,11 +140,11 @@ layout {
     preset-window-heights {
         proportion 0.33333
         proportion 0.5
-        proportion 0.66667 
+        proportion 0.66667
     }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -396,7 +396,7 @@ binds {
     Mod+Return { spawn "alacritty"; }
     Mod+D { spawn "fuzzel"; }
     Mod+A { spawn "nautilus"; }
-    Mod+E { spawn "alacritty" "-e" "ranger"; }
+    Mod+E { spawn "alacritty" "-e" "yazi"; }
     Mod+W { spawn "firefox"; }
 
     // Define screen lock parameters

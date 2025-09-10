@@ -134,7 +134,6 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
-eval "$(mise activate zsh)"
 
 
 # OSC 7: Enable foot terminal to open new windows in current directory

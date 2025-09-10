@@ -24,6 +24,7 @@ zinit light-mode for \
 
 # Custom settings
 
+eval "$(mise activate zsh)"
 source ~/.config/zsh/zshrc-custom
 
 
