@@ -28,3 +28,7 @@ vim/.vim/plugged/
 vim/.vim/swaps/
 vim/.vim/undo/
 shell/.zsh/zsh_modules/
+shell/.config/zsh/zhistory
+shell/.config/zsh/zcompdump
+shell/.config/zsh/.zsh_history
+shell/.config/zsh/.zcompdump

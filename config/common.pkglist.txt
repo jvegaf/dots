@@ -5,7 +5,6 @@ elephant-websearch
 elephant-archlinuxpkgs
 elephant-files
 walker
-
 git
 git-lfs
 lazygit
@@ -89,8 +88,6 @@ tela-circle-icon-theme-dracula
 eww-git
 qt5ct-kde
 qt6ct-kde
-
-
 maplemono-ttf
 noto-fonts
 noto-fonts-cjk
@@ -98,8 +95,6 @@ noto-fonts-emoji
 noto-fonts-extra
 apple-fonts
 ttf-ms-fonts
-
-
 qt5-wayland
 qt6-wayland
 egl-wayland
@@ -111,8 +106,6 @@ rofi-wayland
 waybar
 mako
 swww
-
-
 hyprland
 hyprutils
 hyprpicker
@@ -123,7 +116,6 @@ hyprlock
 pyprland
 hypridle
 uwsm
-
 niri
 xwayland-satellite
 xdg-desktop-portal-gnome

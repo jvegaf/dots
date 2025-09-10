@@ -16,7 +16,7 @@ alias doc="cd ~/Documents"
 alias dw="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias du="du -hd 1"
-alias dfs="cd $MY_DOTS"
+alias dots="cd $MY_DOTS"
 alias logout="gnome-session-quit --logout"
 alias avcfg="nvim ~/.config/nvim/lua/user/init.lua"
 alias chadcfg="cd ~/.config/nvim/lua/custom"
@@ -82,7 +82,6 @@ alias sai="sudo apt install"
 alias aps="apt search"
 alias apu="sudo apt update && sudo apt upgrade -y"
 
-
 # WebDev
 alias nom='npm'
 alias nim='npm'
@@ -128,8 +127,6 @@ alias vpndown='sudo systemctl stop wg-quick@TL_vpn'
 alias vpnstatus='sudo systemctl status wg-quick@TL_vpn'
 # status vpn tunnel sudo wg
 
-
-
 ## UV
 alias pyinst='uv python install' # list python versions to install (e.g. uv python install 3.11 3.12)
 alias ppi='uv pip install'
@@ -141,7 +138,5 @@ alias ppfr='uv pip freeze > requirements.txt'
 alias pvc='uv venv' # Create local environment (pass '--python 3.12' for specific python version)
 alias pva='source ./.venv/bin/activate'
 alias pvd='deactivate' # Deactivate python environment
-
-
 
 # vim: ft=sh
