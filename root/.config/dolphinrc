@@ -1,12 +1,17 @@
+MenuBar=Disabled
+
 [CompactMode]
 PreviewSize=16
 
 [DetailsMode]
-PreviewSize=16
+PreviewSize=32
 RightPadding=0
 
 [General]
+AutoExpandFolders=true
 CloseActiveSplitView=false
+DoubleClickViewAction=go_up
+ShowFullPathInTitlebar=true
 Version=202
 ViewPropsTimestamp=2025,6,6,3,41,19.074
 
@@ -18,4 +23,4 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,directorythumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,opendocumentthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail,gdk-pixbuf-thumbnailer,gsf-office
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,gdk-pixbuf-thumbnailer,gsf-office

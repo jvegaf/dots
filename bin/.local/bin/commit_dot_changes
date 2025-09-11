@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+source "$DOTFILES_PATH/scripts/self/utils/changes.sh"
+
+##? Commit dotfiles changes and push to repository
+#?? 1.0.0
+##?
+##? Usage:
+##?   push_changes
+docs::parse "$@"
+
+log::note "Commiting changes in dotfiles and push to repository"
+commit_all_changes
+
+

@@ -24,6 +24,11 @@ zinit light-mode for \
 
 # Custom settings
 
+if [[ -z ${TMUX+X}${ZSH_SCRIPT+X}${ZSH_EXECUTION_STRING+X} ]]; then
+  exec tmux
+fi
+
+
 eval "$(mise activate zsh)"
 source ~/.config/zsh/zshrc-custom
 

@@ -1,11 +1,9 @@
 ghostty
 firefox
-neovim
-vim
+dolphin
 mpd
 mpc
 mpv
-dolphin
 yazi
 imagemagick
 qbittorrent
