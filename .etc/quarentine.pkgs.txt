@@ -1,0 +1,12 @@
+apple-fonts
+eww-git
+matugen-bin
+pyprland
+python-pywalfox
+python3-gobject
+python3-pip
+qt5ct-kde
+qt6ct-kde
+walker
+wallust
+wlogout

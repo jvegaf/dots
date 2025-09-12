@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# Directorio base de tus dotfiles (donde tienes tus paquetes Stow, e.g., ~/.dotfiles)
+DOTFILES_DIR="$HOME/.dots"
+
+# Función para instalar un dotfile/paquete con Stow
+install_dotfile() {
+  local package_name="$1" # Nombre del paquete (ej: bash, nvim)
+  local target_path="$2"  # Ruta completa en el HOME donde debería ir el symlink (ej: ~/.bashrc)
+  local source_path="$DOTFILES_DIR/$package_name/$target_path_relative" # Ruta del archivo en el repositorio de dotfiles
+
+  # Extraer la ruta relativa dentro del paquete si el target_path se especifica con la estructura de home
+  # Por ejemplo, si target_path es ~/.config/nvim y package_name es nvim,
+  # entonces target_path_relative sería .config/nvim
+  # Para simplificar este ejemplo, asumiremos que target_path_relative se infiere de package_name o se pasa explícitamente.
+  # Para Stow, la estructura de directorios dentro de `package_name` ya define la ruta relativa.
+  # Por ejemplo, si tienes `~/.dotfiles/bash/.bashrc`, Stow lo enlazará a `~/.bashrc`.
+  # Si tienes `~/.dotfiles/nvim/.config/nvim/init.lua`, Stow lo enlazará a `~/.config/nvim/init.lua`.
+  # Por lo tanto, `target_path` no es estrictamente necesario para Stow si la estructura es la correcta,
+  # pero lo usaremos para verificar la existencia del archivo en el destino.
+
+  # Por defecto, Stow usará el directorio padre del STOW_DIR como TARGET_DIR [15, 16].
+  # Si tus dotfiles están en ~/.dotfiles, el target es por defecto $HOME.
+  local resolved_target="$HOME" # Por defecto, el directorio de destino es $HOME
+
+  echo "Procesando el paquete: $package_name"
+
+  # Verificar si el archivo en el directorio de destino (HOME) ya existe y NO es un symlink
+  if [[ -e "$target_path" && ! -L "$target_path" ]]; then
+    echo "¡Conflicto detectado! El archivo '$target_path' existe y no es un symlink."
+
+    # Opción 1: Eliminar el archivo existente directamente (como solicitaste)
+    echo "Eliminando el archivo existente: $target_path"
+    rm -f "$target_path"
+    if [ $? -eq 0 ]; then
+      echo "Archivo '$target_path' eliminado correctamente."
+    else
+      echo "Error al eliminar el archivo '$target_path'. Abortando."
+      return 1
+    fi
+
+    # Opción 2 (alternativa, si quisieras respaldar en lugar de eliminar):
+    # echo "Moviendo el archivo existente a copia de seguridad: $target_path.bak"
+    # mv -v "$target_path" "$target_path.bak"
+
+  elif [[ -L "$target_path" ]]; then
+    echo "El symlink '$target_path' ya existe. Stow lo gestionará (posiblemente lo reemplace con --restow)."
+  fi
+
+  # Ejecutar Stow para crear el symlink
+  # Usamos --restow para asegurar que los symlinks obsoletos se eliminen antes de crear los nuevos [8, 17]
+  # Si el archivo fue eliminado en el paso anterior, --restow o --stow funcionarán para crear el nuevo.
+  cd "$DOTFILES_DIR" || { echo "No se pudo cambiar al directorio de dotfiles"; return 1; }
+  stow --verbose --target="$resolved_target" --restow "$package_name"
+  cd - > /dev/null # Volver al directorio anterior
+}
+
+# --- Uso del script ---
+# Instalar .bashrc (asumiendo que tienes ~/.dotfiles/bash/.bashrc)
+install_dotfile "bash" "$HOME/.bashrc"
+
+# Instalar configuración de Neovim (asumiendo que tienes ~/.dotfiles/nvim/.config/nvim/init.lua)
+install_dotfile "nvim" "$HOME/.config/nvim"
+
+# Puedes añadir más llamadas a `install_dotfile` para otros paquetes
+# install_dotfile "gitconfig" "$HOME/.gitconfig"
+# install_dotfile "tmux" "$HOME/.tmux.conf"
+
+echo "Proceso de dotfiles completado."

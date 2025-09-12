@@ -1,10 +1,5 @@
 [tools]
-deno = "latest"
-dotnet = "8"
 gradle = "latest"
 java = "temurin-21"
 maven = "latest"
 node = "22"
-
-[settings]
-idiomatic_version_file_enable_tools = ["node"]
