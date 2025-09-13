@@ -121,9 +121,9 @@ alias expl='/mnt/c/Windows/explorer.exe'
 alias winyank='/mnt/c/Users/josev/scoop/shims/win32yank.exe'
 
 #VPN
-alias vpnup='sudo systemctl start wg-quick@TL_vpn'
-alias vpndown='sudo systemctl stop wg-quick@TL_vpn'
-alias vpnstatus='sudo systemctl status wg-quick@TL_vpn'
+alias vpnup='sudo systemctl start wg-quick@wg0'
+alias vpndown='sudo systemctl stop wg-quick@wg0'
+alias vpnstatus='sudo systemctl status wg-quick@wg0'
 # status vpn tunnel sudo wg
 
 ## UV

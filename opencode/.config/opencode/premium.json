@@ -3,7 +3,7 @@
   "agent": {
     "build": {
       "mode": "primary",
-      "model": "github-copilot/gpt-4.1",
+      "model": "github-copilot/gpt-5",
       "prompt": "{file:./prompts/build.txt}",
       "tools": {
         "write": true,
@@ -13,7 +13,7 @@
     },
     "plan": {
       "mode": "primary",
-      "model": "github-copilot/gpt-4.1",
+      "model": "github-copilot/gpt-5",
       "tools": {
         "write": false,
         "edit": false,
@@ -21,7 +21,7 @@
       }
     },
     "coder": {
-      "model": "github-copilot/grok-code-fast-1",
+      "model": "github-copilot/claude-sonnet-4",
       "mode": "subagent",
       "tools": {
         "write": true,
@@ -41,7 +41,7 @@
     "code-reviewer": {
       "description": "Reviews code for best practices and potential issues",
       "mode": "subagent",
-      "model": "github-copilot/gpt-4.1",
+      "model": "github-copilot/gpt-5",
       "prompt": "You are a code reviewer. Focus on security, performance, and maintainability.",
       "tools": {
         "write": false,
