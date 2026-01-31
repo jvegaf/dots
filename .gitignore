@@ -8,45 +8,12 @@
 .config/zsh/.zcompdump
 .config/gtk-3.0/bookmarks
 .config/cava/shaders
-.config/calibre/dynamic.pickle.json
-.config/calibre/global.py.json
-.config/calibre/gui.json
-.config/calibre/viewer-webengine.json
-.config/calibre/viewer
 .config/OrcaSlicer/cache
 .config/OrcaSlicer/log
 .config/yazi/plugins
-.config/VSCodium/Cache/Cache_Data
-.config/VSCodium/CachedData/b18126fb99b60533fc069575d08d72758cd90fed/chrome
-.config/VSCodium/CachedProfilesData/__default__profile__
-.config/VSCodium/Code Cache
-.config/VSCodium/Crashpad
-.config/VSCodium/DawnGraphiteCache
-.config/VSCodium/DawnWebGPUCache
-.config/VSCodium/Dictionaries
-.config/VSCodium/GPUCache
-.config/VSCodium/Local Storage/leveldb
-.config/VSCodium/Session Storage
-.config/VSCodium/Shared Dictionary
-.config/VSCodium/User/globalStorage
-.config/VSCodium/User/workspaceStorage
-.config/VSCodium/DIPS
-.config/VSCodium/Network Persistent State
-.config/VSCodium/Preferences
-.config/VSCodium/Trust Tokens
-.config/VSCodium/Trust Tokens-journal
-.config/VSCodium/languagepacks.json
-.config/VSCodium/machineid
-.local/bin/lazydocker
-.local/bin/mise
-.local/bin/uv
-.local/bin/uvx
 .uuid
 .config/kicad/9.0/installed_packages.json
-.config/qtile/__pycache__
-.local/share/icons/hicolor
 .config/opencode/.lock-58d79985acb3c01d.tmp
 .config/opencode/smart-title.jsonc
 .config/ags/.github
-.local/share/icons
 **/__pycache__
