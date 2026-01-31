@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Transforms a mp3 and an image into mp4
+##?
+##? Usage:
+##?   to_mp4 <audio_path> <image_path>
+##?
+docs::eval "$@"
+
+audio_path="$1"
+image_path="$2"
+output_path="${audio_path%.*}.mp4"
+
+ffmpeg \
+  -hwaccel auto \
+  -i "$audio_path" \
+  -i "$image_path" \
+  -c:v libx264 \
+  -crf 18 \
+  -c:a aac \
+  -b:a 192k \
+  "$output_path"

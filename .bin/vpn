@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Colores
+if [[ -t 1 ]]; then
+  BOLD="\033[1m"; DIM="\033[2m"; RESET="\033[0m"
+  RED="\033[38;5;196m"; GREEN="\033[38;5;46m"; YELLOW="\033[38;5;226m"; MAGENTA="\033[38;5;201m"; CYAN="\033[38;5;51m"
+else
+  BOLD=""; DIM=""; RESET=""; RED=""; GREEN=""; YELLOW=""; MAGENTA=""; CYAN=""
+fi
+
+hr() { printf "${DIM}%s${RESET}\n" "────────────────────────────────────────"; }
+title() { printf "${BOLD}${MAGENTA}%s${RESET}\n" "$1"; }
+get_ip() { curl -sS --max-time 8 ifconfig.me || echo "N/A"; }
+
+# Args
+action="${1:-up}"
+iface="${2:-wg0}"
+case "$action" in
+  up)
+    action_label="${YELLOW}${BOLD}Conectando a VPN ${iface}...${RESET}"
+    success_label="${GREEN}${BOLD}VPN conectada.${RESET}"
+    title_before="IP pública (antes de conectar VPN)"
+    title_after="IP pública (después de conectar VPN)"
+    ;;
+  down)
+    action_label="${YELLOW}${BOLD}Desconectando VPN ${iface}...${RESET}"
+    success_label="${GREEN}${BOLD}VPN desconectada.${RESET}"
+    title_before="IP pública (antes de desconectar VPN)"
+    title_after="IP pública (después de desconectar VPN)"
+    ;;
+  *)
+    printf "${RED}Uso:${RESET} %s [up|down] [interfaz]\n" "$0"; exit 2;;
+esac
+
+title "$title_before"
+hr
+before="$(get_ip)"
+printf "  ${CYAN}IP:${RESET} ${BOLD}%s${RESET}\n\n" "$before"
+
+printf "%b\n" "$action_label"
+if sudo wg-quick "$action" "$iface"; then
+  printf "%b\n" "$success_label"
+else
+  printf "${RED}${BOLD}Error al ejecutar wg-quick ${action} ${iface}.${RESET}\n"; exit 1
+fi
+
+sleep 2
+echo
+title "$title_after"
+hr
+after="$(get_ip)"
+printf "  ${CYAN}IP:${RESET} ${BOLD}%s${RESET}\n\n" "$after"
+
+if [[ "$before" != "$after" ]]; then
+  printf "${GREEN}Cambio de IP:${RESET} ${BOLD}%s${RESET} ${DIM}→${RESET} ${BOLD}%s${RESET}\n" "$before" "$after"
+else
+  printf "${YELLOW}La IP no cambió.${RESET}\n"
+fi

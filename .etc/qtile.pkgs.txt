@@ -1,0 +1,15 @@
+ttf-nerd-fonts-symbols
+qtile
+ttf-cascadia-code
+wired
+rofi
+thunar
+polkit-gnome
+qt5ct
+noto-fonts
+flameshot
+gnome-themes-extra
+ttf-jetbrains-mono
+ttf-font-awesome
+picom
+ly

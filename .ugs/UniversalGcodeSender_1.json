@@ -1,0 +1,140 @@
+{
+  "firmwareVersion": "GRBL",
+  "fileName": "/home/th3g3ntl3man/Code/R3M1XXX/DemoBox/ht16k33-adapter/nc/ht16k33-adapter-F_Cu.gbr_ncc_cnc.nc",
+  "fileHistory": [
+    "/home/th3g3ntl3man/Code/R3M1XXX/DemoBox/ht16k33-adapter/nc/ht16k33-adapter-F_Cu.gbr_ncc_cnc.nc"
+  ],
+  "dirHistory": [
+    "/home/th3g3ntl3man/Code/R3M1XXX/DemoBox/ht16k33-adapter/nc"
+  ],
+  "port": "ttyUSB0",
+  "portRate": "115200",
+  "manualModeEnabled": false,
+  "manualModeStepSize": 10.0,
+  "useZStepSize": true,
+  "showABCStepSize": true,
+  "zJogStepSize": 1.0,
+  "abcJogStepSize": 1.0,
+  "jogFeedRate": 2000.0,
+  "scrollWindowEnabled": true,
+  "verboseOutputEnabled": false,
+  "commandTableEnabled": false,
+  "mainWindowSettings": {
+    "xLocation": 0,
+    "yLocation": 27,
+    "width": 640,
+    "height": 520
+  },
+  "visualizerWindowSettings": {
+    "xLocation": 0,
+    "yLocation": 0,
+    "width": 640,
+    "height": 480
+  },
+  "singleStepMode": false,
+  "statusUpdatesEnabled": true,
+  "statusUpdateRate": 200,
+  "preferredUnits": "MM",
+  "disabledAxes": [],
+  "showMachinePosition": false,
+  "showNightlyWarning": true,
+  "showSerialPortWarning": true,
+  "autoStartPendant": false,
+  "pendantPort": 8080,
+  "autoConnect": false,
+  "autoReconnect": false,
+  "autoLevelSettings": {
+    "autoLevelProbeZeroHeight": 0.0,
+    "autoLevelProbeOffset": {
+      "units": "MM",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "a": NaN,
+      "b": NaN,
+      "c": NaN
+    },
+    "autoLevelArcSliceLength": 0.01,
+    "probeScanFeedRate": 1000.0,
+    "probeSpeed": 10.0,
+    "stepResolution": 9.0,
+    "minX": 0.0,
+    "minY": 0.0,
+    "minZ": -0.09700000000000131,
+    "maxX": 38.694,
+    "maxY": 45.376,
+    "maxZ": 0.10500000000000043,
+    "zRetract": 0.2,
+    "zSurface": 0.0,
+    "applyToGcode": true
+  },
+  "fileStats": {
+    "minCoordinate": {
+      "units": "MM",
+      "x": 0.0,
+      "y": 0.0,
+      "z": -0.1811,
+      "a": NaN,
+      "b": NaN,
+      "c": NaN
+    },
+    "maxCoordinate": {
+      "units": "MM",
+      "x": 38.6938,
+      "y": 45.3758,
+      "z": 15.018,
+      "a": NaN,
+      "b": NaN,
+      "c": NaN
+    },
+    "numCommands": 47857
+  },
+  "macros": {
+    "1": {
+      "uuid": "674c4c88-f8a1-4b95-a2c0-2f2e668ecbe3",
+      "name": "Go to XY zero",
+      "gcode": "G90 X0 Y0;",
+      "version": "V1"
+    },
+    "2": {
+      "uuid": "02fb2cf4-ff74-48a8-855f-6202fc15ff5c",
+      "name": "Z Probe",
+      "gcode": "G38.2 Z-10 F20; G92 Z0; G0 G91 Z5",
+      "version": "V1"
+    },
+    "3": {
+      "uuid": "f96e9d44-b60e-4f35-8359-4a2bee66ff95",
+      "name": "Z Save",
+      "gcode": "G0G91Z10"
+    },
+    "4": {
+      "uuid": "13905a59-7284-49a5-8e8a-b11860d56968",
+      "name": "spindle off",
+      "gcode": "M3 S0;",
+      "version": "V1"
+    },
+    "5": {
+      "uuid": "e44446c3-e8f8-4c3d-93a3-c6035014d263",
+      "name": "spindle 25%",
+      "gcode": "M3 S25",
+      "version": "V1"
+    },
+    "6": {
+      "uuid": "705c2c07-13b1-4c2c-8921-dd72d88bd629",
+      "name": "spindle 50%",
+      "gcode": "M3 S50",
+      "version": "V1"
+    },
+    "7": {
+      "uuid": "e7992eb8-4f75-4818-8b11-f0f2edbea40d",
+      "name": "spindle 90%",
+      "gcode": "M3 S90",
+      "version": "V1"
+    }
+  },
+  "language": "en_US",
+  "safetyHeight": 5.0,
+  "invertMouseZoom": false,
+  "showTranslationsWarning": true,
+  "lastWorkingDirectory": "/home/th3g3ntl3man"
+}

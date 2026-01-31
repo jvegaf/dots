@@ -1,0 +1,31 @@
+[Added Associations]
+application/json=sublime_text.desktop;
+application/pdf=okular.desktop;
+application/x-docbook+xml=sublime_text.desktop;
+application/x-kicad-project=kicad.desktop;
+application/x-yaml=sublime_text.desktop;
+image/png=org.xfce.ristretto.desktop;
+text/markdown=sublime_text.desktop;
+text/plain=sublime_text.desktop;nvim.desktop;
+text/x-cmake=sublime_text.desktop;
+
+[Default Applications]
+application/json=sublime_text.desktop;
+application/pdf=okular.desktop;
+application/x-docbook+xml=sublime_text.desktop;
+application/x-kicad-project=kicad.desktop;
+application/x-wayland-gnome-saved-search=thunar.desktop
+application/x-yaml=sublime_text.desktop;
+inode/directory=thunar.desktop
+text/html=firefox.desktop
+text/markdown=sublime_text.desktop;
+text/plain=sublime_text.desktop;
+text/x-cmake=sublime_text.desktop;
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/bruno=bruno.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+text/x-arduino=arduino-arduinoide.desktop
+application/x-wayland-gnome-saved-search=thunar.desktop

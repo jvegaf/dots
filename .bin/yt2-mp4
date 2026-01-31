@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+yt-dlp -f b[ext=mp4] "$1"

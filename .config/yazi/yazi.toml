@@ -1,0 +1,57 @@
+
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+[mgr]
+show_hidden = true
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
+
+
+prepend_preloaders = [
+  # 3d objects
+  { name = "*.3mf", run = "f3d-preview" },
+  { name = "*.obj", run = "f3d-preview" },
+  { name = "*.pts", run = "f3d-preview" },
+  { name = "*.ply", run = "f3d-preview" },
+  { name = "*.stl", run = "f3d-preview" },
+  { name = "*.step", run = "f3d-preview" },
+  { name = "*.stp", run = "f3d-preview" },
+]
+
+prepend_previewers = [
+  # 3d objects
+  { name = "*.3mf", run = "f3d-preview" },
+  { name = "*.obj", run = "f3d-preview" },
+  { name = "*.pts", run = "f3d-preview" },
+  { name = "*.ply", run = "f3d-preview" },
+  { name = "*.stl", run = "f3d-preview" },
+  { name = "*.step", run = "f3d-preview" },
+  { name = "*.stp", run = "f3d-preview" },
+]
+
+[[plugin.prepend_previewers]]
+name = "*.tar*"
+run = 'piper --format=url -- tar tf "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*.csv"
+run = 'piper -- bat -p --color=always "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*.md"
+run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
+
+
+[[plugin.append_previewers]]
+name = "*"
+run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'

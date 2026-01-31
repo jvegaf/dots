@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+yt-dlp -x --audio-format mp3 "$1"

@@ -1,0 +1,14 @@
+ghostty
+mpd
+mpc
+mpv
+imagemagick
+qbittorrent
+foliate
+rmpc
+kicad
+kicad-library
+kicad-library-3d
+opencode-bin
+visual-studio-code-bin
+orca-slicer-bin
