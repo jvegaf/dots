@@ -68,6 +68,7 @@
   "system": {
     "drill_file_history": [],
     "file_history": [
+      "/home/th3g3ntl3man/Code/R3M1XXX/KiCAD/0x01/Controller-2040/gerber/Controller-2040-B_Cu.gbr",
       "/home/th3g3ntl3man/Code/R3M1XXX/DemoBox/ht16k33-adapter/gerber/ht16k33-adapter-F_Cu.gbr"
     ],
     "first_run_shown": false,
@@ -224,12 +225,12 @@
       "user_grid_y": ""
     },
     "maximized": true,
-    "mru_path": "/home/th3g3ntl3man/Code/Cosmos-Keyboard-PCBs/plum-twist",
-    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=610;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=4;row=0;pos=0;prop=100000;bestw=1364;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=36;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=620;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Layers Manager;state=1532;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=427;besth=32;minw=427;minh=32;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=427;floath=32|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=191;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=38|dock_size(1,4,0)=38|dock_size(3,6,0)=36|dock_size(4,3,0)=34|dock_size(2,3,0)=427|dock_size(5,0,0)=384|",
-    "pos_x": 320,
-    "pos_y": 193,
-    "size_x": 1280,
-    "size_y": 720,
+    "mru_path": "/home/th3g3ntl3man/Code/R3M1XXX/KiCAD/0x01/Controller-2040/gerber",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=608;besth=39;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=4;row=0;pos=0;prop=100000;bestw=1266;besth=39;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=620;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Layers Manager;state=1532;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=355;besth=32;minw=355;minh=32;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=355;floath=32|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=181;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=39|dock_size(1,4,0)=39|dock_size(3,6,0)=42|dock_size(4,3,0)=34|dock_size(2,3,0)=355|dock_size(5,0,0)=384|",
+    "pos_x": 0,
+    "pos_y": 0,
+    "size_x": 950,
+    "size_y": 1010,
     "zoom_factors": [
       0.022,
       0.035,

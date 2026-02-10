@@ -1671,7 +1671,7 @@
             },
             {
                 "ecode": "05844096",
-                "intro": "The device cannot detect AMS-HT F. Please reconnect the AMS-HT cable or restart the printer."
+                "intro": "The device cannot detect AMS-HT E. Please reconnect the AMS-HT cable or restart the printer."
             },
             {
                 "ecode": "05824096",
@@ -1699,7 +1699,7 @@
             },
             {
                 "ecode": "05854096",
-                "intro": "The device cannot detect AMS-HT E. Please reconnect the AMS-HT cable or restart the printer."
+                "intro": "The device cannot detect AMS-HT F. Please reconnect the AMS-HT cable or restart the printer."
             },
             {
                 "ecode": "05874096",
@@ -2012,9 +2012,29 @@
             {
                 "ecode": "050040A8",
                 "intro": "The device firmware requires a repair upgrade, and the current operation cannot be performed. Please upgrade it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "05024030",
+                "intro": "Printing stopped because the printer was unable to parse the 3mf file. Please resend your print job."
+            },
+            {
+                "ecode": "0502402D",
+                "intro": "Printing stopped because the printer was unable to parse the 3mf file. Please resend your print job."
+            },
+            {
+                "ecode": "0502402F",
+                "intro": "Printing stopped because the printer was unable to parse the 3mf file. Please resend your print job."
+            },
+            {
+                "ecode": "0502402E",
+                "intro": "Printing stopped because the printer was unable to parse the 3mf file. Please resend your print job."
+            },
+            {
+                "ecode": "0300806E",
+                "intro": "Abnormal nozzle temperature control detected; the heating module may be damaged. Please disconnect the power immediately and stop using the device."
             }
         ],
-        "ver": 202601271217
+        "ver": 202602061609
     },
     "device_hms": {
         "en": [
@@ -3393,6 +3413,54 @@
             {
                 "ecode": "0500040000010061",
                 "intro": ""
+            },
+            {
+                "ecode": "0500060000020015",
+                "intro": ""
+            },
+            {
+                "ecode": "0700520000030001",
+                "intro": "Abnormal number or type of connected AMS units detected. Please refer to the Wiki for supported AMS combinations and adjust the current connection."
+            },
+            {
+                "ecode": "0500060000020045",
+                "intro": ""
+            },
+            {
+                "ecode": "0500060000020009",
+                "intro": ""
+            },
+            {
+                "ecode": "0500060000020025",
+                "intro": ""
+            },
+            {
+                "ecode": "0500060000020035",
+                "intro": ""
+            },
+            {
+                "ecode": "1804220000030002",
+                "intro": "AMS-HT E Slot 3 filament has run out and automatically switched to the slot with the same filament."
+            },
+            {
+                "ecode": "1806220000020003",
+                "intro": "AMS-HT G Slot 3's filament may be broken in AMS-HT."
+            },
+            {
+                "ecode": "0707940000010001",
+                "intro": "AMS H The temperature sensor of heater 1 is offline, which may be due to poor connector contact."
+            },
+            {
+                "ecode": "0702210000010082",
+                "intro": "Failed to read the filament information from AMS C slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+            },
+            {
+                "ecode": "0704200000020012",
+                "intro": "AMS E slot 1 feeder unit motor is stalled, cannot rotate the spool."
+            },
+            {
+                "ecode": "0300110000020002",
+                "intro": "The resonance frequency of the Y-axis differs greatly from the last calibration. Please clean the Y-axis liner rod and conduct a calibration after printing."
             },
             {
                 "ecode": "1800970000030001",
@@ -8569,34 +8637,6 @@
             {
                 "ecode": "1806960000010001",
                 "intro": "AMS-HT G The drying process may experience thermal runaway. Please turn off the AMS power supply."
-            },
-            {
-                "ecode": "0704220000020014",
-                "intro": "AMS E slot 3 filament odometer has no signal, which may be due to poor contact in the odometer connector or a odometer fault."
-            },
-            {
-                "ecode": "0500040000020013",
-                "intro": "The RFID-tag on AMS A Slot4 cannot be identified."
-            },
-            {
-                "ecode": "0701230000010082",
-                "intro": "Failed to read the filament information from AMS B slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0701810000010004",
-                "intro": "AMS B The heater 2 is heating abnormally."
-            },
-            {
-                "ecode": "0582050000010010",
-                "intro": "The firmware of AMS-HT C does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "1801300000010004",
-                "intro": "Encryption chip failure"
-            },
-            {
-                "ecode": "1807210000020007",
-                "intro": "AMS-HT H Slot 2 feed-out Hall sensor is disconnected. The connector may have poor contact."
             },
             {
                 "ecode": "1800120000010001",
@@ -14743,28 +14783,32 @@
                 "intro": "AMS-HT F The heater 2 is disconnected, which may be due to poor connector contact."
             },
             {
-                "ecode": "1804220000030002",
-                "intro": "AMS-HT E Slot 3 filament has run out and automatically switched to the slot with the same filament."
+                "ecode": "0704220000020014",
+                "intro": "AMS E slot 3 filament odometer has no signal, which may be due to poor contact in the odometer connector or a odometer fault."
             },
             {
-                "ecode": "1806220000020003",
-                "intro": "AMS-HT G Slot 3's filament may be broken in AMS-HT."
+                "ecode": "0500040000020013",
+                "intro": "The RFID-tag on AMS A Slot4 cannot be identified."
             },
             {
-                "ecode": "0707940000010001",
-                "intro": "AMS H The temperature sensor of heater 1 is offline, which may be due to poor connector contact."
+                "ecode": "0701230000010082",
+                "intro": "Failed to read the filament information from AMS B slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
             },
             {
-                "ecode": "0702210000010082",
-                "intro": "Failed to read the filament information from AMS C slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "ecode": "0701810000010004",
+                "intro": "AMS B The heater 2 is heating abnormally."
             },
             {
-                "ecode": "0704200000020012",
-                "intro": "AMS E slot 1 feeder unit motor is stalled, cannot rotate the spool."
+                "ecode": "0582050000010010",
+                "intro": "The firmware of AMS-HT C does not match the printer. Please upgrade it on the \"Firmware\" page."
             },
             {
-                "ecode": "0300110000020002",
-                "intro": "The resonance frequency of the Y-axis differs greatly from the last calibration. Please clean the Y-axis liner rod and conduct a calibration after printing."
+                "ecode": "1801300000010004",
+                "intro": "Encryption chip failure"
+            },
+            {
+                "ecode": "1807210000020007",
+                "intro": "AMS-HT H Slot 2 feed-out Hall sensor is disconnected. The connector may have poor contact."
             },
             {
                 "ecode": "0703200000010082",
@@ -17711,7 +17755,7 @@
                 "intro": "AMS-HT A The coil resistance of exhaust valve 1 is abnormal, which may be due to abnormal wiring or damage."
             }
         ],
-        "ver": 202601271217
+        "ver": 202602061609
     },
-    "version": "202601271217"
+    "version": "202602061609"
 }

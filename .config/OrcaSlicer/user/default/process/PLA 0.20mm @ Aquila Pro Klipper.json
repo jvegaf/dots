@@ -1,5 +1,5 @@
 {
-    "brim_type": "no_brim",
+    "brim_type": "brim_ears",
     "default_acceleration": "1000",
     "from": "User",
     "gap_infill_speed": "40",

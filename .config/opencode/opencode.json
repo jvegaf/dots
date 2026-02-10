@@ -3,6 +3,16 @@
   "keybinds": {
     "leader": "alt+z"
   },
+  "agent": {
+    "build": {
+      "mode": "primary",
+      "model": "github-copilot/claude-sonnet-4.5"
+    },
+    "plan": {
+      "mode": "primary",
+      "model": "github-copilot/claude-opus-4.6"
+    }
+  },
   "mcp": {
     "context7": {
       "type": "remote",
