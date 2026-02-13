@@ -2,6 +2,7 @@ export EDITOR='nvim'
 export VISUAL="${EDITOR}"
 export BROWSER='firefox'
 export DOTFILES_DIR="$HOME/.dots"
+export FILE_MANAGER='thunar'
 
 export HISTORY_IGNORE="(ls|lsd|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
