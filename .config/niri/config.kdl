@@ -40,7 +40,7 @@ binds {
     MOD+SHIFT+ESCAPE                     { show-hotkey-overlay; }
 
     // ─── Applications ───
-    MOD+RETURN                          hotkey-overlay-title="Open Terminal: alacritty" { spawn-sh "alacritty"; }
+    MOD+RETURN                          hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
     // MOD+D                               hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
     MOD+D                               hotkey-overlay-title="Open App Launcher: fuzzel" { spawn-sh "fuzzel"; }
     MOD+B                               hotkey-overlay-title="Open Browser: firefox" { spawn-sh "firefox"; }
@@ -151,7 +151,7 @@ binds {
     MOD+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    CTRL+SHIFT+1                        { screenshot; }
+    MOD+SHIFT+S                         { screenshot; }
     CTRL+SHIFT+2                        { screenshot-screen; }
     CTRL+SHIFT+3                        { screenshot-window; }
 
@@ -175,7 +175,7 @@ binds {
     spawn-sh-at-startup "/usr/bin/gnome-keyring-daemon --start --components=secrets"
     spawn-sh-at-startup "/usr/bin/gnome-keyring-daemon --start --components=ssh"
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "swww img /usr/share/wallpapers/cachyos-wallpapers/Skyscraper.png" // Set wallpaper
+    spawn-sh-at-startup "swww img /home/th3g3ntl3man/.wallpapers/110834.jpeg" // Set wallpaper
     spawn-sh-at-startup "waybar" // Launch waybar
 
     prefer-no-csd // Disable program decorations
@@ -280,6 +280,7 @@ binds {
         DISPLAY ":1"
         ELECTRON_OZONE_PLATFORM_HINT "auto"
         QT_QPA_PLATFORM "wayland"
+        QT_QPA_PLATFORMTHEME "gtk3"
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_SESSION_TYPE "wayland"
         XDG_CURRENT_DESKTOP "niri"

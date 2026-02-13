@@ -4,10 +4,14 @@ application/pdf=okular.desktop;
 application/x-docbook+xml=sublime_text.desktop;
 application/x-kicad-project=kicad.desktop;
 application/x-yaml=sublime_text.desktop;
-image/png=org.xfce.ristretto.desktop;
+image/png=mirage.desktop;org.xfce.ristretto.desktop;
 text/markdown=sublime_text.desktop;
 text/plain=sublime_text.desktop;nvim.desktop;
 text/x-cmake=sublime_text.desktop;
+audio/vnd.wave=audacity.desktop;
+audio/mpeg=vlc.desktop;qmmp-enqueue.desktop;
+video/quicktime=vlc.desktop;
+image/jpeg=photoflare.desktop;mirage.desktop;oculante.desktop;
 
 [Default Applications]
 application/json=sublime_text.desktop;

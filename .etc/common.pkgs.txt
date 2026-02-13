@@ -3,7 +3,6 @@ alsa-utils
 ark
 bat
 bat-extras
-bind
 blueman
 bluez
 bluez-utils
@@ -12,11 +11,9 @@ btop
 cava
 cmake
 curl
-egl-wayland
 eza
 fastfetch
 fd
-foot
 fzf
 git
 git-lfs
@@ -25,7 +22,6 @@ go
 kitty
 lazygit
 less
-lsd
 luarocks
 ly
 meson
@@ -57,8 +53,6 @@ unarchiver
 uv
 vim
 wget
-wireguard-tools
-wireplumber
 wl-clipboard
 wlr-randr
 xsel
