@@ -1,0 +1,138 @@
+@import url("themes/catppuccin-macchiato.css");
+
+* {
+  font-family: "Hack Nerd Font";
+  font-size: 12pt;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* Reset all styles */
+* {
+  border: none;
+  border-radius: 3px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* The whole bar */
+#waybar {
+  background-color: @crust;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  margin: 0;
+}
+
+/* Each module */
+#clock,
+#language,
+#wireplumber,
+#tray,
+#workspaces,
+#cpu,
+#memory,
+#custom-gpu,
+#custom-storage,
+#custom-storage2,
+#temperature,
+#backlight,
+#battery,
+#custom-power-menu {
+  margin: 0;
+  padding: 0 10px;
+  color: @text;
+  background-color: @crust;
+  border-style: solid;
+  border-color: @color2;
+  border-radius: 7px;
+}
+
+#tray {
+  padding: 4px 10px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @maroon;
+  border-radius: 100px;
+}
+
+#workspaces {
+  padding: 0 5px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  margin: 0;
+  color: #7984a4;
+  background-color: transparent;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each workspace name */
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  color: @sky;
+  background-color: transparent;
+}
+
+/* Fix predefined gtk background effect on hover  */
+#workspaces button:hover {
+  background: none;
+  /* Uncomment to also disable text highlighting */
+  /* text-shadow: none; */
+}
+
+#workspaces button.urgent,
+#temperature.critical {
+  color: @red;
+}
+
+#battery {
+  color: @text;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: @green;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#custom-power-menu {
+  border-radius: 9.5px;
+  background-color: @crust;
+  border-radius: 7.5px;
+}
+
+label:focus {
+  background-color: @crust;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: @sapphire;
+  }
+}
