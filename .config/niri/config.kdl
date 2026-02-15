@@ -42,7 +42,8 @@ binds {
     // ─── Applications ───
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
     // MOD+D                               hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
-    MOD+D                               hotkey-overlay-title="Open App Launcher: fuzzel" { spawn-sh "fuzzel"; }
+    // MOD+D                               hotkey-overlay-title="Open App Launcher: fuzzel" { spawn-sh "fuzzel"; }
+    MOD+D                               hotkey-overlay-title="Open App Launcher: rofi" { spawn-sh "rofi -show drun"; }
     MOD+B                               hotkey-overlay-title="Open Browser: firefox" { spawn-sh "firefox"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
 
