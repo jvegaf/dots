@@ -1,7 +1,6 @@
 {
     "brim_type": "brim_ears",
     "default_acceleration": "1000",
-    "enable_support": "1",
     "from": "User",
     "gap_infill_speed": "40",
     "inherits": "0.20mm Standard @MyKlipper",

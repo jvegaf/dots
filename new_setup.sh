@@ -109,7 +109,6 @@ packages_common_utils=(
   lazygit
   less
   lib32-pipewire
-  libva-nvidia-driver
   luarocks
   man-db
   man-pages
@@ -145,10 +144,12 @@ packages_common_utils=(
   qt5ct-kde
   qt6ct-kde
   reflector
+  rofi
   ripgrep
   rsync
   sad
   sshfs
+  sddm
   starship
   stow
   superfile
@@ -204,6 +205,7 @@ packages_niri=(
   niri
   xwayland-satellite
   xdg-desktop-portal-gnome
+  hyprlock
 )
 
 packages_apps=(
@@ -222,7 +224,6 @@ packages_apps=(
   mpc
   mpd
   mpv
-  nano
   neovim
   nomacs
   okular
@@ -231,6 +232,9 @@ packages_apps=(
   platformio-core-udev
   qalculate-gtk
   qbittorrent
+  quickshell
+  qt5ct-kde
+  qt6ct-kde
   rmpc
   rose-pine-cursor
   rose-pine-hyprcursor
@@ -265,10 +269,13 @@ packages_nvidia=(
   lib32-nvidia-utils
   nvidia-utils
   nvidia-settings
+  libva-nvidia-driver
 )
 
 install_window_managers() {
-  install_packages "${packages_hyprland[@]}" "${packages_common_wayland[@]}" "${packages_niri[@]}"
+  echo "Instalando Hyprland y Niri..."
+  # install_packages "${packages_hyprland[@]}" "${packages_common_wayland[@]}" "${packages_niri[@]}"
+  install_packages "${packages_common_wayland[@]}" "${packages_niri[@]}"
 }
 
 install_microcode() {
@@ -307,8 +314,8 @@ ln -s ./gitconfig ~/.gitconfig
 sudo cp 50-udisks.rules /etc/polkit-1/rules.d/
 
 # CAMBIAR SHELL
-sudo chsh -s /usr/bin/zsh "$USER"
-sudo chsh -s /usr/bin/zsh root
+sudo chsh -s /bin/zsh "$USER"
+sudo chsh -s /bin/zsh root
 
 # LOG Y SERVICIOS
 echo "Habilitando servicios..."

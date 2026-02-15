@@ -13,3 +13,5 @@ configuration{
     display-Network: " 󰤨  Network";
     sidebar-mode: true;
 }
+
+@theme "/usr/share/rofi/themes/Monokai.rasi"
