@@ -255,6 +255,7 @@ binds {
         match app-id="1password"
         match app-id="org.pulseaudio.pavucontrol"
         match app-id="nm-connection-editor"
+        match title="^Welcome to Android Studio$" // xev
 
         open-floating true // Always float Firefox PiP windows
     }
@@ -271,6 +272,7 @@ binds {
         match app-id="code"
         match app-id="code-insiders"
         match app-id="thunar"
+        match app-id="jetbrains-studio"
 
         //open-on-workspace "browser"
         open-maximized true

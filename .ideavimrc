@@ -285,6 +285,10 @@ nmap \\v <Action>(VimActions)
 nmap <leader>ir <Action>(IdeaVim.ReloadVimRc.reload)
 map <ESC><ESC> :nohlsearch<CR>
 
+" Copilot
+nmap <leader>ac <Action>(copilot.chat.show)
+nmap <leader>ai <Action>(copilot.chat.inline)
+
 
 
 " translation (required idea plugin: Translation)
