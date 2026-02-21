@@ -253,6 +253,8 @@ binds {
     window-rule {
         match app-id=r#"firefox$"# title="^Picture-in-Picture$"
         match app-id="1password"
+        match app-id="org.pulseaudio.pavucontrol"
+        match app-id="nm-connection-editor"
 
         open-floating true // Always float Firefox PiP windows
     }

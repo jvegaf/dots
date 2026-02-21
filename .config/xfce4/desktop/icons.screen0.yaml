@@ -15,29 +15,27 @@ configs:
     "trash:///":
       row: 2
       col: 0
-    "/home/th3g3ntl3man/Desktop/prueba_video":
-      row: 4
-      col: 0
     "/home/th3g3ntl3man/Desktop/closing @ Boiler Room.mp3":
       row: 5
       col: 0
+    "0009-A559":
+      row: 5
+      col: 1
+      last_seen: 1771651406343940
     "/home/th3g3ntl3man/Desktop/prueba_video.zip":
-      row: 9
-      col: 0
-    "/home/th3g3ntl3man/Desktop/teresa.txt":
-      row: 6
-      col: 0
-    "/home/th3g3ntl3man/Desktop/config.kdl":
-      row: 7
-      col: 0
-    "/home/th3g3ntl3man/Desktop/winters 21 Bendita Lokura master.mp3":
       row: 0
       col: 1
-    "/home/th3g3ntl3man/Desktop/corne_v4_vial.vil":
+    "/home/th3g3ntl3man/Desktop/config.kdl":
       row: 8
       col: 0
+    "/home/th3g3ntl3man/Desktop/cf_verificator-v1.0.5.zip":
+      row: 2
+      col: 1
     "/":
       row: 1
+      col: 0
+    "/home/th3g3ntl3man/Desktop/teresa.txt":
+      row: 7
       col: 0
     "/home/th3g3ntl3man":
       row: 0
@@ -46,3 +44,25 @@ configs:
       row: 3
       col: 0
       last_seen: 1771119963755855
+    "/home/th3g3ntl3man/Desktop/prueba_video":
+      row: 4
+      col: 0
+    "/home/th3g3ntl3man/Desktop/noir-dotfiles":
+      row: 3
+      col: 1
+    "/home/th3g3ntl3man/Desktop/corne-tenter-case.3mf":
+      row: 6
+      col: 0
+    "/home/th3g3ntl3man/Desktop/corne_v4_vial.vil":
+      row: 9
+      col: 0
+    "000B-2CDC":
+      row: 5
+      col: 1
+      last_seen: 1771651460402331
+    "/home/th3g3ntl3man/Desktop/winters 21 Bendita Lokura master.mp3":
+      row: 1
+      col: 1
+    "/home/th3g3ntl3man/Desktop/noir-archinstall":
+      row: 4
+      col: 1
