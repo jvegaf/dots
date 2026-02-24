@@ -1914,6 +1914,10 @@
                 "intro": "AMS(or AMS Lite) D communication is abnormal. Please reconnect the module cable or restart the printer."
             },
             {
+                "ecode": "07FF8030",
+                "intro": "The filament specified in the slicer has been used up. Printing is paused. Please go to the machine to replace the material and resume printing."
+            },
+            {
                 "ecode": "058140A2",
                 "intro": "AMS-HT B communication is abnormal. Please reconnect the module cable or restart the printer."
             },
@@ -1924,6 +1928,10 @@
             {
                 "ecode": "058340A2",
                 "intro": "AMS-HT D communication is abnormal. Please reconnect the module cable or restart the printer."
+            },
+            {
+                "ecode": "07FE8030",
+                "intro": "The filament specified in the slicer has been used up. Printing is paused. Please go to the machine to replace the material and resume printing."
             },
             {
                 "ecode": "05008041",
@@ -2042,7 +2050,7 @@
                 "intro": "Please check and remove any printed parts or debris from the heatbed surface before continuing the cold pull."
             }
         ],
-        "ver": 202602121814
+        "ver": 202602241613
     },
     "device_hms": {
         "en": [
@@ -18019,7 +18027,7 @@
                 "intro": "AMS-HT A The coil resistance of exhaust valve 1 is abnormal, which may be due to abnormal wiring or damage."
             }
         ],
-        "ver": 202602121814
+        "ver": 202602241613
     },
-    "version": "202602121814"
+    "version": "202602241613"
 }
