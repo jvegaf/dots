@@ -4,8 +4,7 @@
   <property name="xfce4-power-manager" type="empty">
     <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
     <property name="brightness-switch" type="int" value="0"/>
+    <property name="show-tray-icon" type="bool" value="true"/>
     <property name="profile-on-ac" type="string" value="performance"/>
-    <property name="lid-action-on-ac" type="uint" value="4"/>
-    <property name="profile-on-battery" type="string" value="performance"/>
   </property>
 </channel>
