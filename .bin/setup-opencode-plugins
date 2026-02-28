@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd "$HOME/.config/opencode" || exit
+
+curl -fsSL https://plannotator.ai/install.sh | bash
+
+echo "Plannotator plugin installed successfully!"
+
+exit 0

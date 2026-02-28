@@ -19,6 +19,7 @@ alias du="du -hd 1"
 alias dots='cd $DOTFILES_DIR'
 alias logout="gnome-session-quit --logout"
 alias nvcfg="cd ~/.config/nvim"
+alias occfg="cd ~/.config/opencode"
 alias vimcfg="vim ~/.vimrc"
 alias r="yazi"
 alias paru="paru --bottomup"
