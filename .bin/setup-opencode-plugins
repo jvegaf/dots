@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
 
 cd "$HOME/.config/opencode" || exit
 
