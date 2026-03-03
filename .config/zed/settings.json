@@ -1,5 +1,5 @@
 {
-  "buffer_font_weight": 600.0,
+  "buffer_font_weight": 500.0,
   "on_last_window_closed": "quit_app",
   "when_closing_with_no_tabs": "close_window",
   "edit_predictions": {
@@ -92,7 +92,7 @@
     "use_smartcase_find": true,
   },
   "ui_font_size": 16,
-  "buffer_font_size": 18.0,
+  "buffer_font_size": 20.0,
   "agent_ui_font_size": 16,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_family": "FantasqueSansM Nerd Font",
