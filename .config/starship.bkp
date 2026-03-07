@@ -1,67 +1,65 @@
-add_newline = false
+# ~/.config/starship.toml
 
-format = """\
-$time$cmd_duration$username\
-[](fg:color2 bg:color4)\
-$directory\
-[](fg:color4 bg:color6)\
-$git_branch\
-$git_status\
-[](fg:color6 bg:color8)\
-$python\
-[](fg:color8)\
-$character\
-"""
+# Prompt principal
+format = """
+[╭─](bold bright)$os$username$directory$git_branch$git_status$package
+[╰─](bold bright)$character"""
 
-palette = 'colors'
+# Symboles de confirmation
+[character]
+success_symbol = "[❯❯](bold green)"
+error_symbol = "[❯❯](bold red)"
+vimcmd_symbol = "[❯❯](bold yellow) "
 
-[palettes.colors]
-color1 = '#42008a'
-color2 = '#d5baff'
-color3 = '#ffffff'
-color4 = '#834ed5'
-color5 = '#3a2659'
-color6 = '#d4bbfa'
-color7 = '#eddeff'
-color8 = '#533f74'
+# Dossier actuel
+[directory]
+style = "bold blue"
+read_only = " "
+format = "[$path]($style)[$read_only]($style)"
+home_symbol = " "
 
+# Branche Git
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+# Statut Git (modifications, commits, etc.)
+[git_status]
+style = "yellow"
+format = "[$all_status]($style) "
+
+# Infos sur le package.json, pyproject.toml, etc.
+[package]
+symbol = " "
+style = "bold cyan"
+format = "[$symbol$version]($style) "
+
+# Heure (si tu veux l'afficher)
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
-format = '[ 󱑍 $time ](fg:color1 bg:color2)'
+time_format = "%H:%M"
+style = "bold white"
+format = "[🕒 $time]($style) "
 
+# OS (Arch, baby)
+[os]
+disabled = false
+format = "[󰣇 ](blue)"
+style = "blue"
+
+# Configuration rapide pour shell clean
 [cmd_duration]
-min_time = 3000
-format = "[󱑎 $duration ](fg:color1 bg:color2)"
+min_time = 500
+format = "[⏱ $duration]($style) "
+style = "bold yellow"
 
-[username]
-format = '[$user ](fg:color1 bg:color2)'
-
-[directory]
-format = "[ $path ](fg:color3 bg:color4)"
-
-[git_branch]
-format = '[ $symbol$branch(:$remote_branch) ](fg:color5 bg:color6)'
-symbol = "  "
-
-[git_status]
-format = '[$all_status ](fg:color5 bg:color6)'
-
-[git_metrics]
-format = "([+$added ]($added_style))[]($added_style)"
-added_style = "fg:color5 bg:color6"
-deleted_style = "fg:color5 bg:color6"
+# Réduire les symboles inutiles
+[hostname]
 disabled = false
 
-[hg_branch]
-format = "[ $symbol$branch ]"
-symbol = " "
+[username]
+show_always = true
 
-[python]
-# Show python version and virtual environment name
-python_binary = ["python3", "python"]
-format = "[ (${virtualenv}) ](fg:color7 bg:color8)"
-
-[character]
-success_symbol = '[](color1 bold)'
-error_symbol = '[ ✗](#ffb4ab bold)'
+[env_var.SSH_CONNECTION]
+disabled = true

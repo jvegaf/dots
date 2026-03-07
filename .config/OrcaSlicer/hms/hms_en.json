@@ -2048,9 +2048,21 @@
             {
                 "ecode": "0502C031",
                 "intro": "Please check and remove any printed parts or debris from the heatbed surface before continuing the cold pull."
+            },
+            {
+                "ecode": "0300806F",
+                "intro": "Abnormal temperature rise detected on the heatbed. The heating module may be damaged. Please power off the device immediately and stop using it."
+            },
+            {
+                "ecode": "07FEC030",
+                "intro": "The filament specified in the slicer has been used up. Printing is paused. Please go to the machine to replace the material and resume printing."
+            },
+            {
+                "ecode": "07FFC030",
+                "intro": "The filament specified in the slicer has been used up. Printing is paused. Please go to the machine to replace the material and resume printing."
             }
         ],
-        "ver": 202602241613
+        "ver": 202603061650
     },
     "device_hms": {
         "en": [
@@ -3709,6 +3721,142 @@
             {
                 "ecode": "0703230000020023",
                 "intro": "AMS D slot 4 the tube inside the AMS is broken, or feed-out hall sensor is faulty and cannot detect the filament."
+            },
+            {
+                "ecode": "0702200000020057",
+                "intro": "The RFID-tag on AMS C Slot 1 cannot be identified."
+            },
+            {
+                "ecode": "1880200000020058",
+                "intro": "The RFID-tag on AMS-HT A cannot be identified."
+            },
+            {
+                "ecode": "1882200000020058",
+                "intro": "The RFID-tag on AMS-HT C cannot be identified."
+            },
+            {
+                "ecode": "0702230000020057",
+                "intro": "The RFID-tag on AMS C Slot 4 cannot be identified."
+            },
+            {
+                "ecode": "0700210000020057",
+                "intro": "The RFID-tag on AMS A Slot 2 cannot be identified."
+            },
+            {
+                "ecode": "1887200000020058",
+                "intro": "The RFID-tag on AMS-HT H cannot be identified."
+            },
+            {
+                "ecode": "0700200000020057",
+                "intro": "The RFID-tag on AMS A Slot 1 cannot be identified."
+            },
+            {
+                "ecode": "0703230000020057",
+                "intro": "The RFID-tag on AMS D Slot 4 cannot be identified."
+            },
+            {
+                "ecode": "0700230000020057",
+                "intro": "The RFID-tag on AMS A Slot 4 cannot be identified."
+            },
+            {
+                "ecode": "0701230000020057",
+                "intro": "The RFID-tag on AMS B Slot 4 cannot be identified."
+            },
+            {
+                "ecode": "1884200000020058",
+                "intro": "The RFID-tag on AMS-HT E cannot be identified."
+            },
+            {
+                "ecode": "0703200000020057",
+                "intro": "The RFID-tag on AMS D Slot 1 cannot be identified."
+            },
+            {
+                "ecode": "0703220000020057",
+                "intro": "The RFID-tag on AMS D Slot 3 cannot be identified."
+            },
+            {
+                "ecode": "0701210000020057",
+                "intro": "The RFID-tag on AMS B Slot 2 cannot be identified."
+            },
+            {
+                "ecode": "1885200000020058",
+                "intro": "The RFID-tag on AMS-HT F cannot be identified."
+            },
+            {
+                "ecode": "1886200000020058",
+                "intro": "The RFID-tag on AMS-HT G cannot be identified."
+            },
+            {
+                "ecode": "1881200000020058",
+                "intro": "The RFID-tag on AMS-HT B cannot be identified."
+            },
+            {
+                "ecode": "0700220000020057",
+                "intro": "The RFID-tag on AMS A Slot 3 cannot be identified."
+            },
+            {
+                "ecode": "0702210000020057",
+                "intro": "The RFID-tag on AMS C Slot 2 cannot be identified."
+            },
+            {
+                "ecode": "0702220000020057",
+                "intro": "The RFID-tag on AMS C Slot 3 cannot be identified."
+            },
+            {
+                "ecode": "0701200000020057",
+                "intro": "The RFID-tag on AMS B Slot 1 cannot be identified."
+            },
+            {
+                "ecode": "0701220000020057",
+                "intro": "The RFID-tag on AMS B Slot 3 cannot be identified."
+            },
+            {
+                "ecode": "1883200000020058",
+                "intro": "The RFID-tag on AMS-HT D cannot be identified."
+            },
+            {
+                "ecode": "0703210000020057",
+                "intro": "The RFID-tag on AMS D Slot 2 cannot be identified."
+            },
+            {
+                "ecode": "0300010000010005",
+                "intro": "A heatbed temperature control issue has been detected and the heating module may be damaged. Please power off the device immediately and follow the Wiki to replace the AC board."
+            },
+            {
+                "ecode": "1805200000020017",
+                "intro": "AMS-HT F slot 1 assist motor is stalled，due to excessive resistance in the tube between AMS and the printer."
+            },
+            {
+                "ecode": "0702210000010086",
+                "intro": "Failed to read the filament information from AMS C slot 2. The RFID tag cannot rotate due to a jam during the filament loading or unloading. Please pull out the filament and try again."
+            },
+            {
+                "ecode": "0704200000020001",
+                "intro": "AMS E Slot 1 filament has run out. Please insert a new filament."
+            },
+            {
+                "ecode": "0702220000020021",
+                "intro": "AMS C slot 3 assist motor is stalled，due to excessive resistance in the tube between the filament buffer and the toolhead."
+            },
+            {
+                "ecode": "0700300000030003",
+                "intro": "RFID cannot be read because of a hardware or structural error."
+            },
+            {
+                "ecode": "1803200000020019",
+                "intro": "AMS-HT D slot 1 assist motor is stalled，due to excessive resistance in the tube between AMS and the filament buffer."
+            },
+            {
+                "ecode": "0703230000020024",
+                "intro": "AMS D slot 4 failed to rotate the filament spool when pulling filament back to AMS."
+            },
+            {
+                "ecode": "0705200000020002",
+                "intro": "AMS F Slot 1 is empty; please insert a new filament."
+            },
+            {
+                "ecode": "0707330000020002",
+                "intro": "The RFID-tag on AMS H Slot4 is damaged, or its content cannot be identified."
             },
             {
                 "ecode": "1801200000020012",
@@ -8877,42 +9025,6 @@
             {
                 "ecode": "03000D0000020007",
                 "intro": "The build plate may not be properly placed. If this message appears repeatedly, please check the Wiki for more explanations."
-            },
-            {
-                "ecode": "0701220000020020",
-                "intro": "AMS B slot 3 assist motor is stalled，due to excessive resistance in the tube near the filament buffer。"
-            },
-            {
-                "ecode": "1804200000020023",
-                "intro": "AMS-HT E slot 1 the tube inside the AMS is broken, or feed-out hall sensor is faulty and cannot detect the filament."
-            },
-            {
-                "ecode": "0700200000020024",
-                "intro": "AMS A slot 1 failed to rotate the filament spool when pulling filament back to AMS."
-            },
-            {
-                "ecode": "1803220000020016",
-                "intro": "AMS-HT D slot 3 assist motor has slipped. Please pull out the filament, cut off the worn part, and then try again."
-            },
-            {
-                "ecode": "1807100000010001",
-                "intro": "The AMS-HT H slot 1 motor has slipped. The extrusion wheel may be malfunctioning, or the filament may be too thin."
-            },
-            {
-                "ecode": "1807200000010085",
-                "intro": "Failed to read the filament information from AMS-HT H slot 1. RFID tag verification failed. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0700230000020001",
-                "intro": "AMS A Slot 4 filament has run out. Please insert a new filament."
-            },
-            {
-                "ecode": "1803130000020004",
-                "intro": "AMS-HT D The brushed motor 4 has no signal, which may be due to poor contact in the motor connector or a motor fault."
-            },
-            {
-                "ecode": "0702200000020002",
-                "intro": "AMS C Slot 1 is empty; please insert a new filament."
             },
             {
                 "ecode": "1800120000010001",
@@ -14935,40 +15047,40 @@
                 "intro": "AMS-HT F Slot 2 filament may be broken in the tool head."
             },
             {
-                "ecode": "1805200000020017",
-                "intro": "AMS-HT F slot 1 assist motor is stalled，due to excessive resistance in the tube between AMS and the printer."
+                "ecode": "0701220000020020",
+                "intro": "AMS B slot 3 assist motor is stalled，due to excessive resistance in the tube near the filament buffer。"
             },
             {
-                "ecode": "0702210000010086",
-                "intro": "Failed to read the filament information from AMS C slot 2. The RFID tag cannot rotate due to a jam during the filament loading or unloading. Please pull out the filament and try again."
+                "ecode": "1804200000020023",
+                "intro": "AMS-HT E slot 1 the tube inside the AMS is broken, or feed-out hall sensor is faulty and cannot detect the filament."
             },
             {
-                "ecode": "0704200000020001",
-                "intro": "AMS E Slot 1 filament has run out. Please insert a new filament."
+                "ecode": "0700200000020024",
+                "intro": "AMS A slot 1 failed to rotate the filament spool when pulling filament back to AMS."
             },
             {
-                "ecode": "0702220000020021",
-                "intro": "AMS C slot 3 assist motor is stalled，due to excessive resistance in the tube between the filament buffer and the toolhead."
+                "ecode": "1803220000020016",
+                "intro": "AMS-HT D slot 3 assist motor has slipped. Please pull out the filament, cut off the worn part, and then try again."
             },
             {
-                "ecode": "0700300000030003",
-                "intro": "RFID cannot be read because of a hardware or structural error."
+                "ecode": "1807100000010001",
+                "intro": "The AMS-HT H slot 1 motor has slipped. The extrusion wheel may be malfunctioning, or the filament may be too thin."
             },
             {
-                "ecode": "1803200000020019",
-                "intro": "AMS-HT D slot 1 assist motor is stalled，due to excessive resistance in the tube between AMS and the filament buffer."
+                "ecode": "1807200000010085",
+                "intro": "Failed to read the filament information from AMS-HT H slot 1. RFID tag verification failed. You can try to use Bambu Lab filament."
             },
             {
-                "ecode": "0703230000020024",
-                "intro": "AMS D slot 4 failed to rotate the filament spool when pulling filament back to AMS."
+                "ecode": "0700230000020001",
+                "intro": "AMS A Slot 4 filament has run out. Please insert a new filament."
             },
             {
-                "ecode": "0705200000020002",
-                "intro": "AMS F Slot 1 is empty; please insert a new filament."
+                "ecode": "1803130000020004",
+                "intro": "AMS-HT D The brushed motor 4 has no signal, which may be due to poor contact in the motor connector or a motor fault."
             },
             {
-                "ecode": "0707330000020002",
-                "intro": "The RFID-tag on AMS H Slot4 is damaged, or its content cannot be identified."
+                "ecode": "0702200000020002",
+                "intro": "AMS C Slot 1 is empty; please insert a new filament."
             },
             {
                 "ecode": "1801100000010001",
@@ -18027,7 +18139,7 @@
                 "intro": "AMS-HT A The coil resistance of exhaust valve 1 is abnormal, which may be due to abnormal wiring or damage."
             }
         ],
-        "ver": 202602241613
+        "ver": 202603061650
     },
-    "version": "202602241613"
+    "version": "202603061650"
 }
