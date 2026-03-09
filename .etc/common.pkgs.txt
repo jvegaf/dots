@@ -53,8 +53,6 @@ unarchiver
 uv
 vim
 wget
-wl-clipboard
-wlr-randr
 xsel
 xclip
 yazi
