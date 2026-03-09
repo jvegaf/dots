@@ -32,15 +32,27 @@ configs:
       width: 1920
       height: 1080
   icons:
+    "trash:///":
+      row: 2
+      col: 0
+    "4A78CFCC78CFB4CB":
+      row: 3
+      col: 0
+      last_seen: 1773069643940585
+    "2026-01-08-18-32-58-00":
+      row: 4
+      col: 0
+      last_seen: 1772248114728557
     "1c683efb-5c4f-4203-ab5e-13b71305f293":
       row: 5
       col: 0
       last_seen: 1772248114744655
+    "32AF-8252":
+      row: 4
+      col: 0
+      last_seen: 1773071270085872
     "/":
       row: 1
-      col: 0
-    "trash:///":
-      row: 2
       col: 0
     "/home/th3g3ntl3man":
       row: 0
@@ -49,7 +61,3 @@ configs:
       row: 3
       col: 0
       last_seen: 1772151929616067
-    "2026-01-08-18-32-58-00":
-      row: 4
-      col: 0
-      last_seen: 1772248114728557

@@ -12,9 +12,9 @@ local beautiful = require("beautiful")
 
 -- Theme handling library
 local themes = {
-    "catppuccino",
-    "gruvbox",
-    "seashell",
+	"catppuccino",
+	"gruvbox",
+	"seashell",
 }
 
 local chosen_theme = themes[1]
@@ -22,7 +22,7 @@ local chosen_theme = themes[1]
 beautiful.init(string.format("%s/.config/awesome/theme/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 
 -- This is used later as the default terminal and editor to run.
-terminal = "kitty"
+terminal = "alacritty"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -30,15 +30,15 @@ editor_cmd = terminal .. " -e " .. editor
 -- Modkey: Mod4 (Super key) or Mod1 (Alt key)
 modkey = "Mod4"
 
-require 'signals'
+require("signals")
 
-require 'bindings'
+require("bindings")
 
-require 'config'
+require("config")
 
-require 'rules'
+require("rules")
 
-require 'ui'
+require("ui")
 
 -- Autostart
 awful.spawn.with_shell(string.format("%s/.config/awesome/autostart.sh", os.getenv("HOME")))

@@ -29,7 +29,7 @@ font pango: Noto Sans Regular 10
 set $mod Mod4
 set $alt Mod1
 # set $term --no-startup-id /bin/xfce4-terminal --command tmux
-set $term --no-startup-id kitty
+set $term --no-startup-id alacritty
 set $file-browser --no-startup-id thunar
 set $web-browser --no-startup-id firefox
 set $launcher --no-startup-id rofi -show drun
@@ -254,7 +254,7 @@ bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 # bindsym $mod+w exec --no-startup-id /usr/bin/firefox
-bindsym $mod+$alt+Return exec --no-startup-id $file-browser
+bindsym $mod+e exec --no-startup-id $file-browser
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
