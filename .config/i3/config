@@ -29,7 +29,7 @@ font pango: Noto Sans Regular 10
 set $mod Mod4
 set $alt Mod1
 # set $term --no-startup-id /bin/xfce4-terminal --command tmux
-set $term --no-startup-id alacritty
+set $term --no-startup-id kitty
 set $file-browser --no-startup-id thunar
 set $web-browser --no-startup-id firefox
 set $launcher --no-startup-id rofi -show drun

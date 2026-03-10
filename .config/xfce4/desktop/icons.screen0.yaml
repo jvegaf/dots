@@ -39,6 +39,10 @@ configs:
       row: 3
       col: 0
       last_seen: 1773069643940585
+    "5CCE-D6A1":
+      row: 5
+      col: 0
+      last_seen: 1773075788359060
     "2026-01-08-18-32-58-00":
       row: 4
       col: 0
@@ -51,9 +55,6 @@ configs:
       row: 4
       col: 0
       last_seen: 1773071270085872
-    "/":
-      row: 1
-      col: 0
     "/home/th3g3ntl3man":
       row: 0
       col: 0
@@ -61,3 +62,6 @@ configs:
       row: 3
       col: 0
       last_seen: 1772151929616067
+    "/":
+      row: 1
+      col: 0
