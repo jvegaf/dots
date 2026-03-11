@@ -1,5 +1,5 @@
 export MY_DOTFILES=$HOME/.dots
-export TERMINAL=alacritty
+export TERMINAL=kitty
 
 if command -v mise &> /dev/null; then
   eval "$(mise activate bash)"

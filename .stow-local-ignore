@@ -12,3 +12,4 @@ setup
 new_setup.sh
 gitconfig
 gitfix.sh
+install-scripts
