@@ -1,79 +1,23 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Ja KooLit - Default 
 
-* {
-    bg:             #1e1e2e;
-    fg-inputbar:    #cdd6f4;
-    fg-prompt:      #fab387;
-    fg-entry:       #fab387;
-    fg-selected:    #fab387;
-    fg-placeholder: #45475a;
-    fg-normal:      #45475a;
-}
+* All main themes or configs are located in ~/.config/rofi/themes/
+* If you want to edit the config, that is where you should edit NOT here 
 
-configuration {
-    font:           "JetBrains Mono 12";
-    show-icons:     true;
-    sidebar-mode:   false;
-}
+* To load a new theme, manually edit the file path below or choose desired theme via rofi theme selector (choose via app menu)
 
-window {
-    transparency:       "real";
-    background-color:   @bg;
-    border:             0px;
-    border-radius:      14px;
-    width:              720px;
-	height:             420px;
-}
+* Alternative way to Load (preferred) own cooked by Ja 
+* SUPER CTRL R - Choose style & SUPER CTRL SHIFT R 
 
-inputbar {
-    background-color:   transparent;
-    text-color:         @fg-inputbar;
-    expand:             false;
-    children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
-}
+* TIPS 
+* If you have edited a config, rename it with a unique name. During update, the contents of 
+* ~/.config/rofi/themes/ will be replaced. */
 
-prompt {
-    enable:         true;
-    expand:         false;
-    text-color:     @fg-prompt;
-    padding:        5px;
-}
+/* ---- Global Configuration Fonts ---- */
+@import "~/.config/rofi/0-shared-fonts.rasi"
 
-entry {
-    background-color:   @bg;
-    text-color:         @fg-entry;
-    placeholder-color:  @fg-placeholder;
-    placeholder:        "Type to filter";
-    border:             0px;
-    padding:            5px;
-    border-radius:      14px;
-    expand:             true;
-    blink:              true;
-}
+/* note: Main themes in ~/.config/rofi/themes */
+/* You can manually change here or you can use rofi theme selector SUPER SHIFT E */
 
-element.normal.normal {
-    background-color:   transparent;
-    orientation:        vertical;
-    text-color:         @fg-normal;
-    border:             0px;
-    padding:            5px;
-}
 
-element-icon {
-    size:   28px;
-}
-
-element-text {
-    margin: 0.5% 0.5% -0.5% 0.5%;
-}
-
-element selected normal, element selected active {
-    background-color:   @bg;
-    text-color:         @fg-selected;
-}
-
-element.alternate.normal {
-    background-color:   transparent;
-    border:             0px;
-    padding:            5px;
-    text-color:         @fg-normal;
-}
+@theme "~/.config/rofi/themes/KooL_style-4.rasi"

@@ -1,0 +1,11 @@
+1password
+freecad-weekly-appimage
+gtk2
+gtk-engine-murrine
+opencode-bin
+orca-slicer-bin
+paru
+paru-debug
+ttf-victor-mono
+wallust
+wlogout

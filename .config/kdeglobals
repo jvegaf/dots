@@ -134,17 +134,13 @@ ForegroundVisited=155,89,182
 
 [General]
 ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
-TerminalApplication=kitty +open %U
-TerminalService=kitty-open.desktop
-
-[Icons]
-Theme=breeze-dark
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 
 [KDE]
-AnimationDurationFactor=0.25
+LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
 frameContrast=0.2
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -155,41 +151,13 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=true
+Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
 View Style=DetailTree
-
-[KScreen]
-ScaleFactor=1.25
-ScreenScaleFactors=DP-0=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;HDMI-0=1.25;DP-4=1.25;DP-5=1.25;DP-6=1.25;
-
-[Shortcuts]
-AboutApp=
-AboutKDE=
-Clear=
-ConfigureNotifications=
-ConfigureToolbars=
-Donate=
-EditBookmarks=
-FitToHeight=
-FitToPage=
-FitToWidth=
-Goto=
-GotoPage=
-Mail=
-OpenRecent=
-PrintPreview=
-ReportBug=
-Revert=
-ShowStatusbar=
-ShowToolbar=
-Spelling=
-SwitchApplicationLanguage=
-Zoom=
 
 [WM]
 activeBackground=39,44,49
