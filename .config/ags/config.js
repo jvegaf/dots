@@ -1,58 +1,31 @@
+"use strict";
 import GLib from 'gi://GLib';
+import App from 'resource:///com/github/Aylur/ags/app.js'
+import userOptions from './modules/.configuration/user_options.js';
+import Overview from './modules/overview/main.js';
 
-const main = '/tmp/ags/hyprpanel/main.js';
-const entry = `${App.configDir}/main.ts`;
-const bundler = GLib.getenv('AGS_BUNDLER') || 'bun';
+const COMPILED_STYLE_DIR = `${GLib.get_user_config_dir()}/ags/user/`
 
-const v = {
-    ags: pkg.version?.split('.').map(Number) || [],
-    expect: [1, 8, 1],
-};
+async function applyStyle() {
 
-try {
-    switch (bundler) {
-        case 'bun':
-            await Utils.execAsync([
-                'bun',
-                'build',
-                entry,
-                '--outfile',
-                main,
-                '--external',
-                'resource://*',
-                '--external',
-                'gi://*',
-                '--external',
-                'file://*',
-            ]);
-            break;
-
-        case 'esbuild':
-            await Utils.execAsync([
-                'esbuild',
-                '--bundle',
-                entry,
-                '--format=esm',
-                `--outfile=${main}`,
-                '--external:resource://*',
-                '--external:gi://*',
-                '--external:file://*',
-            ]);
-            break;
-
-        default:
-            throw `"${bundler}" is not a valid bundler`;
-    }
-
-    if (v.ags[1] < v.expect[1] || v.ags[2] < v.expect[2]) {
-        print(`HyprPanel needs atleast v${v.expect.join('.')} of AGS, yours is v${v.ags.join('.')}`);
-        App.quit();
-    }
-
-    await import(`file://${main}`);
-} catch (error) {
-    console.error(error);
-    App.quit();
+    App.resetCss();
+    App.applyCss(`${COMPILED_STYLE_DIR}/style.css`);
+    console.log('[LOG] Styles loaded')
 }
+applyStyle().catch(print);
 
-export {};
+const Windows = () => [
+    Overview()
+];
+const CLOSE_ANIM_TIME = 210;
+App.config({
+    css: `${COMPILED_STYLE_DIR}/style.css`,
+    stackTraceOnError: true,
+    closeWindowDelay: {
+        'sideright': CLOSE_ANIM_TIME,
+        'sideleft': CLOSE_ANIM_TIME,
+        'osk': CLOSE_ANIM_TIME,
+    },
+    windows: Windows().flat(1),
+});
+

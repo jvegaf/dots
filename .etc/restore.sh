@@ -2,8 +2,8 @@
 
 set -eu pipefail
 
-sudo pacman -Syu --needed --noconfirm - < common.pkgs.txt
+paru -S --needed --noconfirm - < lates_pkgs.txt
 
-paru -S --needed --noconfirm - < apps.pkgs.txt
+paru -S --needed --noconfirm - < lates_aur_pkgs.txt
 
 exit 0

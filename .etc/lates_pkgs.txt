@@ -90,9 +90,6 @@ network-manager-applet
 networkmanager-openvpn
 nmap
 ntfs-3g
-nvidia-open-dkms
-nvidia-settings
-nvtop
 nwg-displays
 nwg-look
 opencode-bin
@@ -106,7 +103,6 @@ paru-debug
 pavucontrol
 pipewire
 pipewire-alsa
-pipewire-jack
 pipewire-pulse
 pkgfile
 plasma-meta
