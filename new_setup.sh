@@ -108,7 +108,9 @@ packages_common_utils=(
   kitty
   lazygit
   less
+  lm_sensors
   lib32-pipewire
+  libnotify
   luarocks
   man-db
   man-pages
@@ -141,8 +143,8 @@ packages_common_utils=(
   python-pynvim
   python-pywalfox
   python-kikit
-  qt5ct-kde
-  qt6ct-kde
+  qt5ct
+  qt6ct
   reflector
   rofi
   ripgrep
@@ -150,6 +152,7 @@ packages_common_utils=(
   sad
   sshfs
   sddm
+  sof-firmware
   starship
   stow
   superfile
@@ -199,6 +202,10 @@ packages_hyprland=(
   pyprland
   hypridle
   uwsm
+  gtk-engine-murrine
+  qt6-5compat
+  quickshell
+  aylurs-gtk-shell-git
 )
 
 packages_niri=(
@@ -274,8 +281,8 @@ packages_nvidia=(
 
 install_window_managers() {
   echo "Instalando Hyprland y Niri..."
-  # install_packages "${packages_hyprland[@]}" "${packages_common_wayland[@]}" "${packages_niri[@]}"
-  install_packages "${packages_common_wayland[@]}" "${packages_niri[@]}"
+  install_packages "${packages_hyprland[@]}" "${packages_common_wayland[@]}" 
+  # install_packages "${packages_common_wayland[@]}" "${packages_niri[@]}"
 }
 
 install_microcode() {
@@ -295,7 +302,8 @@ install_apps() {
 }
 
 # CREAR CARPETAS DE USUARIO
-mkdir -p "$USER_HOME/Code" "$USER_HOME/.local/bin"
+# mkdir -p "$USER_HOME/Code" "$USER_HOME/.local/bin"
+mkdir -p "$USER_HOME/.local/bin"
 sudo mkdir -p "$OPT_USER"
 sudo chown -R "$USER:$USER" "$OPT_USER"
 
@@ -305,13 +313,16 @@ install_window_managers
 install_packages "${packages_firmware[@]}"
 install_microcode
 install_fonts
-install_nvidia_drivers
+# install_nvidia_drivers
 install_apps
 install_docker
 
 stow . --adopt
 ln -s ./gitconfig ~/.gitconfig
-sudo cp 50-udisks.rules /etc/polkit-1/rules.d/
+# sudo cp 50-udisks.rules /etc/polkit-1/rules.d/
+
+sudo usermod -aG input "$USER"
+sudo usermod -aG uucp "$USER"
 
 # CAMBIAR SHELL
 sudo chsh -s /bin/zsh "$USER"
