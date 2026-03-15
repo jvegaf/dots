@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "$1" = "off" ]; then
+  localectl set-x11-keymap "us" "" "" ""
+elif [ "$1" = "on" ]; then
+  localectl set-x11-keymap "us" "" "" "caps:escape"
+else
+  echo "Usage: $0 {on|off}"
+  echo "  on  - Enable caps:escape mapping"
+  echo "  off - Disable caps:escape mapping"
+  exit 1
+fi
+
+echo "Keyboard layout updated: caps:escape is $1"
+# vim: ft=sh

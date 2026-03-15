@@ -1,13 +1,13 @@
 mpd
+1password
 mpc
 mpv
 imagemagick
 qbittorrent
-foliate
 rmpc
 kicad
 kicad-library
 kicad-library-3d
 opencode-bin
-visual-studio-code-bin
-orca-slicer-bin
+orca-slicer-unstable-bin
+freecad-weekly-appimage

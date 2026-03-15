@@ -11,7 +11,7 @@ decorations_theme_variant = "Dark"
 
 [terminal.shell]
 program = "/bin/zsh"
-# args = ["--login", "-c", "tmux new-session -A -s main-alacritty"]
+args = ["--login", "-c", "tmux new-session -A -s main-alacritty"]
 
 [window.dimensions]
 columns = 100
@@ -53,22 +53,22 @@ cyan = "0x8FBCBB"
 white = "0xECEFF4"
 
 [font]
-size = 15
+size = 12
 
 [font.normal]
-family = "FantasqueSansM Nerd Font"
-style = "Bold"
+family = "monospace"
+style = "Regular"
 
 [font.bold]
-family = "FantasqueSansM Nerd Font"
+family = "monospace"
 style = "Bold"
 
 [font.italic]
-family = "FantasqueSansM Nerd Font"
-style = "Bold Italic"
+family = "monospace"
+style = "Italic"
 
 [font.bold_italic]
-family = "FantasqueSansM Nerd Font"
+family = "monospace"
 style = "Bold Italic"
 
 [selection]

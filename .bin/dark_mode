@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+# gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # gsettings set org.gnome.desktop.interface icon-theme "Yaru-blue"
 
@@ -8,13 +8,13 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # if you have the Breeze Dark theme installed.
 # lookandfeeltool -platform offscreen \
 #    --apply "org.kde.breezedark.desktop"
-
+# gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 # You can set the theme for GTK apps here as well
 # if you run into problems.
-dbus-send --session --dest=org.kde.GtkConfig \
-  --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme \
-  "string:Breeze-dark-gtk"
-
-dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
+# dbus-send --session --dest=org.kde.GtkConfig \
+#   --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme \
+#   "string:Breeze-dark-gtk"
+#
+# dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
 
 # vim: ft=sh
