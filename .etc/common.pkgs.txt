@@ -23,7 +23,6 @@ kitty
 lazygit
 less
 luarocks
-ly
 meson
 mise
 mlocate

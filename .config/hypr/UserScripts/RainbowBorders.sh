@@ -3,7 +3,7 @@
 # Smooth border cycling effect using Wallust palette or full rainbow
 
 # Possible values: "wallust_random", "rainbow", "gradient_flow"
-EFFECT_TYPE="gradient_flow"
+EFFECT_TYPE="wallust_random"
 
 WALLUST_COLORS_SOURCE="$HOME/.config/hypr/wallust/wallust-hyprland.conf"
 

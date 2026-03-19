@@ -17,3 +17,4 @@
 .config/opencode/smart-title.jsonc
 .config/ags/.github
 **/__pycache__
+**/.initial_startup_done

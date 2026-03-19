@@ -13,3 +13,4 @@ new_setup.sh
 gitconfig
 gitfix.sh
 install-scripts
+.initial_startup_done

@@ -11,10 +11,10 @@
   "output": "eDP-1",
   "reload_style_on_change": true,
   "modules-left": [
-    "niri/workspaces"
+    "hyprland/workspaces"
   ],
   "modules-center": [
-    "niri/window"
+    "hyprland/window"
   ],
   "modules-right": [
     "tray",
@@ -85,7 +85,7 @@
   },
   "cpu": {
     "interval": 10,
-    "format": " {usage}%",
+    "format": "   {usage}%",
   },
   "temperature": {
     "interval": 10,
@@ -94,7 +94,7 @@
     "interval": 1,
     "format": "{:%H:%M:%S}",
   },
-  "niri/workspaces": {
+  "hyprland/workspaces": {
     "show-special": true,
     "persistent-workspaces": {
       "*": [
@@ -128,7 +128,7 @@
     //   "code": "󰨞"
     //   }
   },
-  "niri/window": {
+  "hyprland/window": {
     "icon": true,
     "icon-size": 18,
     "rewrite": {
