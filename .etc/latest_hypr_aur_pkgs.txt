@@ -1,11 +1,11 @@
 1password
+android-studio
 freecad-weekly-appimage
-gtk2
 gtk-engine-murrine
+hyprcap
 opencode-bin
-orca-slicer-bin
-paru
-paru-debug
+orca-slicer-unstable-bin
+systemd-manager-tui
+ttf-nanum
 ttf-victor-mono
 wallust
-wlogout

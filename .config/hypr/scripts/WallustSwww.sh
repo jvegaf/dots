@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 # Wallust: derive colors from the current wallpaper and update templates
 # Usage: WallustSwww.sh [absolute_path_to_wallpaper]
 
@@ -113,6 +113,37 @@ wallust_targets=(
   "$HOME/.config/rofi/wallust/colors-rofi.rasi"
 )
 wait_for_templates "$start_ts" "${wallust_targets[@]}" || true
+
+# Run kitty-only wallust config to keep terminal palette separate
+run_wallust_with_config() {
+  local cfg="$1"
+  if wallust run --help 2>&1 | grep -q -E '(^|[[:space:]])-c([,[:space:]]|$)|--config'; then
+    wallust run -s -c "$cfg" "$wallpaper_path" || true
+  else
+    WALLUST_CONFIG="$cfg" wallust run -s "$wallpaper_path" || true
+  fi
+}
+
+kitty_cfg="$HOME/.config/wallust/wallust-kitty.toml"
+if [ -f "$kitty_cfg" ]; then
+  kitty_ts=$(date +%s)
+  run_wallust_with_config "$kitty_cfg"
+  wait_for_templates "$kitty_ts" "$HOME/.config/kitty/kitty-themes/01-Wallust.conf" || true
+fi
+
+# Reload kitty colors when wallpaper-based theme is active
+kitty_wallust_theme="$HOME/.config/kitty/kitty-themes/01-Wallust.conf"
+if [ -s "$kitty_wallust_theme" ]; then
+  if command -v kitty >/dev/null 2>&1; then
+    kitty @ load-config >/dev/null 2>&1 || true
+    kitty @ set-colors --all --configured "$kitty_wallust_theme" >/dev/null 2>&1 || true
+  fi
+  if pidof kitty >/dev/null 2>&1; then
+    for pid in $(pidof kitty); do
+      kill -SIGUSR1 "$pid" 2>/dev/null || true
+    done
+  fi
+fi
 
 # Normalize Ghostty palette syntax in case ':' was used by older files
 if [ -f "$HOME/.config/ghostty/wallust.conf" ]; then

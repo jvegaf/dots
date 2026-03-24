@@ -1,49 +1,49 @@
- /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  
+ /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  
  /* wallust template - colors-rofi */
 
 * {
-active-background: #784CA0;
-active-foreground: #FAE8E1;
-normal-background: #181519;
-normal-foreground: #FAE8E1;
-urgent-background: #CC659A;
-urgent-foreground: #FAE8E1;
+active-background: #C39B7C;
+active-foreground: #E0F1F3;
+normal-background: #201F23;
+normal-foreground: #E0F1F3;
+urgent-background: #B8AABB;
+urgent-foreground: #E0F1F3;
 
-alternate-active-background: #914B4B;
-alternate-active-foreground: #FAE8E1;
-alternate-normal-background: #181519;
-alternate-normal-foreground: #FAE8E1;
-alternate-urgent-background: #181519;
-alternate-urgent-foreground: #FAE8E1;
+alternate-active-background: #AE856C;
+alternate-active-foreground: #E0F1F3;
+alternate-normal-background: #201F23;
+alternate-normal-foreground: #E0F1F3;
+alternate-urgent-background: #201F23;
+alternate-urgent-foreground: #E0F1F3;
 
-selected-active-background: #CC659A;
-selected-active-foreground: #FAE8E1;
-selected-normal-background: #CC659A;
-selected-normal-foreground: #FAE8E1;
-selected-urgent-background: #784CA0;
-selected-urgent-foreground: #FAE8E1;
+selected-active-background: #C39B7C;
+selected-active-foreground: #201F23;
+selected-normal-background: #C39B7C;
+selected-normal-foreground: #201F23;
+selected-urgent-background: #AE856C;
+selected-urgent-foreground: #201F23;
 
-background-color: #181519;
+background-color: #201F23;
 background: rgba(0,0,0,0.7);
-foreground: #FAE8E1;
-border-color: #784CA0;
+foreground: #E0F1F3;
+border-color: #C39B7C;
 
-color0: #3F3C40;
-color1: #1A1022;
-color2: #492E61;
-color3: #6D3838;
-color4: #5A3978;
-color5: #994C74;
-color6: #B58E80;
-color7: #F0D6CC;
-color8: #A8958F;
-color9: #23152D;
-color10: #613D81;
-color11: #914B4B;
-color12: #784CA0;
-color13: #CC659A;
-color14: #F2BDAA;
-color15: #F0D6CC;
+color0: #46454A;
+color1: #576C57;
+color2: #985662;
+color3: #826351;
+color4: #92745D;
+color5: #8A7F8C;
+color6: #7EA2A5;
+color7: #CBE3E5;
+color8: #8E9FA0;
+color9: #748F74;
+color10: #CB7383;
+color11: #AE856C;
+color12: #C39B7C;
+color13: #B8AABB;
+color14: #A7D8DC;
+color15: #CBE3E5;
 
 
 }

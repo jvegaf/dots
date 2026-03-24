@@ -35,11 +35,12 @@ nmap
 ntfs-3g
 pavucontrol
 pkgfile
+platformio-core
+platformio-core-udev
 playerctl
 python-pynvim
 pyenv
 ripgrep
-rustup
 sad
 sshfs
 starship

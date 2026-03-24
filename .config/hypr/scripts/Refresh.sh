@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 # Scripts for refreshing ags, waybar, rofi, swaync, wallust
 
 SCRIPTSDIR=$HOME/.config/hypr/scripts
@@ -22,6 +22,9 @@ for _prs in "${_ps[@]}"; do
   fi
 done
 
+# Clean up any Waybar-spawned cava instances (unique temp conf names)
+pkill -f 'waybar-cava\..*\.conf' 2>/dev/null || true
+
 # added since wallust sometimes not applying
 killall -SIGUSR2 waybar
 # Added sleep for GameMode causing multiple waybar
@@ -31,7 +34,7 @@ sleep 0.1
 #ags -q && ags &
 
 # quit quickshell & relaunch quickshell
-#pkill qs && qs &
+pkill qs && qs &
 
 # some process to kill
 for pid in $(pidof waybar rofi swaync ags swaybg); do

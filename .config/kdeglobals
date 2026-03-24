@@ -144,6 +144,10 @@ contrast=4
 frameContrast=0.2
 widgetStyle=Breeze
 
+[KScreen]
+ScreenScaleFactors=eDP-1=1;
+XwaylandClientsScale=true
+
 [WM]
 activeBackground=39,44,49
 activeBlend=252,252,252
