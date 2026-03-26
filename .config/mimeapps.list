@@ -1,8 +1,10 @@
 [Added Associations]
 inode/directory=org.kde.dolphin.desktop;
+model/stl=fstl-3.desktop;/home/th3g3ntl3man/.local/share/applications/fstl-2.desktop;
 text/csv=libreoffice.desktop;
 
 [Default Applications]
 application/x-wayland-gnome-saved-search=thunar.desktop
 inode/directory=org.kde.dolphin.desktop;
+model/stl=fstl-3.desktop;
 text/csv=libreoffice.desktop;

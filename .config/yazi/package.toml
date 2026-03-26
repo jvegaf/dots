@@ -50,8 +50,8 @@ hash = "771af2becc575a3f43d0542de823969d"
 
 [[plugin.deps]]
 use = "boydaihungst/gvfs"
-rev = "32eb9f3"
-hash = "b6f691f01a2122bd94866800d4d12a22"
+rev = "a908b62"
+hash = "5b6bd533139461c620968c1d860b4dce"
 
 [[plugin.deps]]
 use = "NoponyAsked/sxiv"
