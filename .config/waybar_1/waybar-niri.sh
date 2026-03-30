@@ -7,4 +7,4 @@ killall -q waybar
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
 # Launch main
-waybar -c ~/.config/waybar/config-niri.jsonc -s ~/.config/waybar/style.css &
+waybar -c ~/.config/waybar_1/config-niri.jsonc -s ~/.config/waybar_1/style.css &

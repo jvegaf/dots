@@ -6,7 +6,7 @@ input {
         xkb {
             //If you want to overwrite your keyboard layout,
             // uncomment the line below and change the layout accordingly.
-            // layout "us" // Use the American keyboard layout
+            layout "us" // Use the American keyboard layout
             // options "caps:escape" // Make the Caps Lock key function as an additional Escape key
         }
         // numlock // Enable numlock on startup

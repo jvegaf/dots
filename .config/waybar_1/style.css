@@ -1,138 +1,399 @@
-@import url("themes/catppuccin-macchiato.css");
-
 * {
-  font-family: "Hack Nerd Font";
-  font-size: 12pt;
-  font-weight: 900;
-  margin: 0;
-  padding: 0;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-/* Reset all styles */
-* {
-  border: none;
-  border-radius: 3px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
   min-height: 0;
-  margin: 0;
-  padding: 0;
 }
 
-/* The whole bar */
-#waybar {
-  background-color: @crust;
-  color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-radius: 0px;
-  margin: 0;
+@import "theme.css";
+
+/* === Main Background === */
+
+window#waybar {
+  background: @main-bg;
 }
 
-/* Each module */
-#clock,
-#language,
-#wireplumber,
-#tray,
+/* === Drop Shadow === */
+
+window#waybar>box {
+  background-color: transparent;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 1);
+  margin: 2px;
+}
+
+/* === Tooltip === */
+
+tooltip {
+  background: @main-bg;
+  border: solid;
+  border-width: 1.5px;
+  border-radius: 8px;
+  border-color: @main-br;
+}
+
+tooltip label {
+  color: @main-fg;
+  font-weight: normal;
+  margin: 0.25px;
+}
+
+/* === Workspace Buttons === */
+
+#workspaces button {
+  color: @module-fg;
+  border-radius: 8px;
+  box-shadow: none;
+  margin: 2px 0;
+  padding: 0 2px;
+  transition: none;
+}
+
+#workspaces button:hover {
+  color: @hover-fg;
+  background: @hover-bg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#workspaces button.active {
+  color: @active-fg;
+  background: @active-bg;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  margin: 2px;
+  padding: 0 6px;
+}
+
+/* === General === */
+
+#custom-ws,
 #workspaces,
-#cpu,
+#window,
+#custom-cpuinfo,
 #memory,
-#custom-gpu,
-#custom-storage,
-#custom-storage2,
-#temperature,
-#backlight,
+#custom-cpu,
+#clock,
+#custom-wifi,
+#bluetooth,
+#custom-update,
+#custom-media,
+#pulseaudio,
+#custom-backlight,
 #battery,
-#custom-power-menu {
-  margin: 0;
-  padding: 0 10px;
-  color: @text;
-  background-color: @crust;
-  border-style: solid;
-  border-color: @color2;
-  border-radius: 7px;
+#custom-power {
+  opacity: 1;
+  color: @module-fg;
+  margin-bottom: 0;
+  padding: 0 4px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
-#tray {
-  padding: 4px 10px;
+#custom-left1,
+#custom-left2,
+#custom-left3,
+#custom-left4,
+#custom-left5,
+#custom-left6,
+#custom-left7,
+#custom-left8 {
+  font-size: 11pt;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.5);
 }
 
-#tray > .passive {
-  -gtk-icon-effect: dim;
+#custom-right1,
+#custom-right2,
+#custom-right3,
+#custom-right4,
+#custom-right5 {
+  font-size: 11pt;
+  padding-right: 3px;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
 }
 
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: @maroon;
-  border-radius: 100px;
+/* === Modules === */
+
+/* == Window Icon == */
+
+#custom-ws {
+  background: @main-bg;
+}
+
+/* == Workspaces == */
+
+#custom-left1 {
+  color: @workspaces;
+  background: @main-bg;
+  padding-left: 2px;
 }
 
 #workspaces {
-  padding: 0 5px;
+  background: @workspaces;
 }
 
-#workspaces button {
-  padding: 0 5px;
-  margin: 0;
-  color: #7984a4;
-  background-color: transparent;
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each workspace name */
-  border: none;
-  border-radius: 0;
+#custom-right1 {
+  color: @workspaces;
+  background: @main-bg;
+  text-shadow: 3px 0 2px rgba(0, 0, 0, 0.4);
 }
 
-#workspaces button.active,
-#workspaces button.focused {
-  color: @sky;
-  background-color: transparent;
+/* == Temperature == */
+
+#custom-paddc {
+  padding-right: 22px;
 }
 
-/* Fix predefined gtk background effect on hover  */
-#workspaces button:hover {
-  background: none;
-  /* Uncomment to also disable text highlighting */
-  /* text-shadow: none; */
+#custom-left2 {
+  color: @cpuinfo;
+  background: @main-bg;
+  padding-left: 3px;
 }
 
-#workspaces button.urgent,
-#temperature.critical {
-  color: @red;
+#custom-cpuinfo {
+  background: @cpuinfo;
+  padding-left: 1px;
+  padding-right: 0;
+}
+
+/* == Memory == */
+
+#custom-left3 {
+  color: @memory;
+  background: @cpuinfo;
+  padding-left: 3px;
+}
+
+#memory {
+  background: @memory;
+  padding-left: 1px;
+  padding-right: 0;
+}
+
+#memory.warning {
+  color: @warning;
+}
+
+#memory.critical {
+  color: @critical;
+}
+
+/* == CPU == */
+
+#custom-left4 {
+  color: @cpu;
+  background: @memory;
+  padding-left: 3px;
+}
+
+#custom-cpu {
+  background: @cpu;
+}
+
+#custom-leftin1 {
+  color: @cpu;
+  font-size: 12.2pt;
+  margin-bottom: -2px;
+}
+
+/* == Distro Icon == */
+
+#custom-left5 {
+  color: @distro-bg;
+  background: @main-bg;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.6);
+  padding-left: 3px;
+}
+
+#idle_inhibitor {
+  color: @distro-fg;
+  background: @distro-bg;
+  font-size: 11pt;
+  margin-right: -1px;
+  margin-bottom: -2px;
+  padding-right: 0;
+  padding-left: 3px;
+  text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
+}
+
+#custom-right2 {
+  color: @distro-bg;
+  background: @main-bg;
+}
+
+/* == Time == */
+
+#custom-rightin1 {
+  color: @time;
+  font-size: 12.2pt;
+  margin-bottom: -2px;
+}
+
+#clock.time {
+  background: @time;
+}
+
+#custom-right3 {
+  color: @time;
+  background: @date;
+}
+
+/* == Date == */
+
+#clock.date {
+  background: @date;
+}
+
+#clock.date:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#custom-right4 {
+  color: @date;
+  background: @tray;
+}
+
+/* == Tray == */
+
+#custom-wifi {
+  padding-left: 5px;
+  padding-right: 8px;
+  background: @tray;
+}
+
+#custom-wifi:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#bluetooth {
+  padding-right: 5px;
+  background: @tray;
+}
+
+#bluetooth:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#custom-update {
+  padding-right: 8px;
+  background: @tray;
+}
+
+#custom-update:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#custom-right5 {
+  color: @tray;
+  background: @main-bg;
+}
+
+/* == Media Info == */
+
+#custom-media {
+  font-weight: normal;
+  background-color: @main-bg;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+#custom-media:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* == Output Device == */
+
+#custom-left6 {
+  color: @pulseaudio;
+  background: @main-bg;
+  padding-left: 3px;
+}
+
+#pulseaudio {
+  background: @pulseaudio;
+}
+
+#pulseaudio:hover {
+  color: @hover-fg;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* == Brightness == */
+
+#custom-left7 {
+  color: @backlight;
+  background: @pulseaudio;
+  padding-left: 2px;
+}
+
+#custom-backlight {
+  background: @backlight;
+}
+
+/* == Battery == */
+
+#custom-left8 {
+  color: @battery;
+  background: @backlight;
+  padding-left: 2px;
 }
 
 #battery {
-  color: @text;
+  background: @battery;
 }
 
-#battery.charging,
-#battery.full,
-#battery.plugged {
-  color: @green;
+#battery.full {
+  color: @full;
 }
 
-#battery.critical:not(.charging) {
-  color: @red;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#battery.good {
+  color: @module-fg;
 }
 
-#custom-power-menu {
-  border-radius: 9.5px;
-  background-color: @crust;
-  border-radius: 7.5px;
+#battery.warning {
+  color: @warning;
 }
 
-label:focus {
-  background-color: @crust;
+#battery.critical {
+  color: @critical;
 }
 
-@keyframes blink {
-  to {
-    background-color: rgba(30, 34, 42, 0.5);
-    color: @sapphire;
-  }
+#battery.charging {
+  color: @charging;
+}
+
+/* == Power Button == */
+
+#custom-leftin2 {
+  color: @battery;
+  background: @main-bg;
+  font-size: 12.2pt;
+  margin-bottom: -2px;
+}
+
+#custom-power {
+  color: @main-bg;
+  background: @power;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 0 2px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2px 4px 2px 0;
+  padding-right: 6px;
+  padding-left: 9px;
+}
+
+#custom-power:hover {
+  color: @hover-fg;
+  background: @hover-bg;
+  text-shadow: none;
+  box-shadow: none;
 }

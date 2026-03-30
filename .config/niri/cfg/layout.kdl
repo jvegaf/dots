@@ -12,7 +12,7 @@
         focus-ring {
             width 1
             active-color "#00ac89"
-            inactive-color "#505050"
+            inactive-color "#4F4F4F"
         }
 
         shadow {

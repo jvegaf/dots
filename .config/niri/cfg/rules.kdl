@@ -17,7 +17,7 @@
     // Open Firefox maximized and on the "browser" workspace
     window-rule {
         match app-id="firefox"
-        match app-id="Alacritty"
+        // match app-id="Alacritty"
         match app-id="code"
         match app-id="code-insiders"
         match app-id="thunar"

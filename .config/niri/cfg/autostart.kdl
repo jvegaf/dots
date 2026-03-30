@@ -5,8 +5,8 @@
     spawn-sh-at-startup "/usr/bin/gnome-keyring-daemon --start --components=pkcs11"
     spawn-sh-at-startup "/usr/bin/gnome-keyring-daemon --start --components=secrets"
     spawn-sh-at-startup "/usr/bin/gnome-keyring-daemon --start --components=ssh"
-    spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "swww img ~/.config/wallpapers/bg_0.jpg" // Set wallpaper
-    spawn-sh-at-startup "waybar" // Launch waybar
+    spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
+    spawn-sh-at-startup "awww img ~/.config/wallpapers/bg_0.jpg" // Set wallpaper
+    spawn-sh-at-startup "~/.config/waybar_1/waybar-niri.sh" // Launch waybar
     spawn-sh-at-startup "~/.bin/init_gtk"
 
