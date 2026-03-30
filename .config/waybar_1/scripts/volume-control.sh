@@ -18,7 +18,7 @@ EOF
 
 send_notification() {
   vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | sed 's/%//')
-  notify-send -r 91190 "Volume: ${vol}%"
+  # notify-send -r 91190 "Volume: ${vol}%"
 }
 
 notify_mute() {

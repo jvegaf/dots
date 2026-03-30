@@ -5,5 +5,5 @@
 
 output "eDP-1" {
     mode "2560x1440@60.000" // Set resolution and refresh rate
-    scale 1.33 // No scaling (use 2 for HiDPI)
+    scale 1.2 // No scaling (use 2 for HiDPI)
 }

@@ -8,5 +8,5 @@
     spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
     spawn-sh-at-startup "awww img ~/.config/wallpapers/bg_0.jpg" // Set wallpaper
     spawn-sh-at-startup "~/.config/waybar_1/waybar-niri.sh" // Launch waybar
-    spawn-sh-at-startup "~/.bin/init_gtk"
+    // spawn-sh-at-startup "~/.bin/init_gtk"
 

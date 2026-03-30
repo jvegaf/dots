@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-b5e8c9bd-c6e9-4de2-9561-1b12bd2b140b=none,none,Switch to activity "Default"
 switch-to-activity-b63f25a8-044d-4d69-9216-cdf78c51b4a7=none,none,Switch to activity "Default"
 switch-to-activity-c5f8f282-31d9-4139-82b5-705a1b94c1be=none,none,Switch to activity "Default"
 switch-to-activity-d1a80513-e140-4536-993d-4ffee3b3f5e5=none,none,Switch to activity "Default"
@@ -42,9 +43,9 @@ Cycle Overview=,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=,none,Cycle through Grid View and Overview
 Decrease Opacity=,,Decrease Opacity of Active Window by 5%
 Edit Tiles=Meta+Shift+T,Meta+T,Toggle Tiles Editor
-Expose=Ctrl+F9,Meta+F9\tCtrl+F9,Toggle Present Windows (Current desktop)
-ExposeAll=Ctrl+F10\tLaunch (C),Meta+F10\tLaunch (C)\tCtrl+F10,Toggle Present Windows (All desktops)
-ExposeClass=Ctrl+F7,Meta+F7\tCtrl+F7,Toggle Present Windows (Window class)
+Expose=Meta+F9\tCtrl+F9,Meta+F9\tCtrl+F9,Toggle Present Windows (Current desktop)
+ExposeAll=Meta+F10\tLaunch (C)\tCtrl+F10,Meta+F10\tLaunch (C)\tCtrl+F10,Toggle Present Windows (All desktops)
+ExposeClass=Meta+F7\tCtrl+F7,Meta+F7\tCtrl+F7,Toggle Present Windows (Window class)
 ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
 Grid View=Meta+G,Meta+G,Toggle Grid View
 Increase Opacity=,,Increase Opacity of Active Window by 5%
@@ -252,6 +253,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 25=,none,Activate Application Launcher Widget
 clear-history=,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels

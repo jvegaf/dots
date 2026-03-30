@@ -18,6 +18,8 @@
     window-rule {
         match app-id="firefox"
         // match app-id="Alacritty"
+        match app-id="FreeCAD"
+        match app-id="org.QCAD.qcad-bin"
         match app-id="code"
         match app-id="code-insiders"
         match app-id="thunar"
