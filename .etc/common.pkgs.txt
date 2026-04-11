@@ -8,7 +8,6 @@ bluez
 bluez-utils
 brightnessctl
 btop
-cava
 cmake
 curl
 eza
@@ -26,15 +25,10 @@ luarocks
 meson
 mise
 mlocate
-ncdu
 neovim
-net-tools
-network-manager-applet
-networkmanager-openvpn
 nmap
 ntfs-3g
 pavucontrol
-pkgfile
 platformio-core
 platformio-core-udev
 playerctl
@@ -45,7 +39,6 @@ sad
 sshfs
 starship
 stow
-swww
 tealdeer
 tmux
 unzip

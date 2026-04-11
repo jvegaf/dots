@@ -1,11 +1,18 @@
 [Added Associations]
+application/pdf=firefox.desktop;
 inode/directory=org.kde.dolphin.desktop;
 model/stl=fstl-3.desktop;/home/th3g3ntl3man/.local/share/applications/fstl-2.desktop;
 text/csv=libreoffice.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
+application/pdf=firefox.desktop;
 application/x-wayland-gnome-saved-search=thunar.desktop
+image/dxf=qcad.desktop;
 inode/directory=org.kde.dolphin.desktop;
 model/stl=fstl-3.desktop;
 text/csv=libreoffice.desktop;
-image/dxf=qcad.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/lmstudio=LM-Studio.desktop

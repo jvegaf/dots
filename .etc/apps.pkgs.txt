@@ -10,5 +10,5 @@ kicad
 kicad-library
 kicad-library-3d
 opencode-bin
-orca-slicer-unstable-bin
-freecad-weekly-appimage
+orca-slicer-bin
+freecad
